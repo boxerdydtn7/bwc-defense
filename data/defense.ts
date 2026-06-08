@@ -383,10 +383,15 @@ export const ASSET_FLOWS: AssetFlow[] = [
 // ─────────────────────────────────────────
 export const MARKET_DATA = {
   domestic: {
-    totalMarketKrw: 2_000_000_000,
+    totalMarketKrw: 500_000_000,
+    totalMarketNote: "강중유 단독 ~5억 (2025 조달청 2.77억 + 해병대·해군 별도 발주 합산)",
+    tamKrw: 5_000_000_000,
+    tamNote: "TAM ~50억 (강중유 5억 + 방청유 15억 + 세정유 20억 + 정비창 MRO 10억)",
     suppliers: 6,
-    mainCompetitors: ["고려케미칼", "동진케미칼", "대성화학", "미유테크", "그린바이오켐", "비우켐", "한국하우톤"],
-    avgPricePerCN: "5,314~5,920원",
+    mainCompetitors: ["한국하우톤(2,121억*)", "미유테크(193억*)", "고려케미칼", "동진케미칼(33억*)", "대성화학(~35억*)", "그린바이오캠"],
+    competitorNote: "* 전체 회사 매출 — 강중유는 각사 매출의 극소 비율",
+    avgPricePerCN: "5,314~6,450원 (조달단가) / 25,575원 (하우톤 PL-SP)",
+    annualQuantity: "42,872 CN (2025 조달청 통합발주 기준)",
   },
   global: {
     marketSize2025: "$121.6M~$138M",

@@ -967,14 +967,18 @@ function CategorySection({ category }: { category: Category }) {
       {/* K-CLP 전용: CLP 시장 데이터 */}
       {category === "k_clp" && (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-          <ChartCard title="국내 CLP 시장" subtitle={`시장규모 약 ${fmt(MARKET_DATA.domestic.totalMarketKrw / 100000000)}억원`}>
+          <ChartCard title="국내 군용 CLP 시장" subtitle={`강중유 ~${fmt(MARKET_DATA.domestic.totalMarketKrw / 100000000)}억 / TAM ~${fmt(MARKET_DATA.domestic.tamKrw / 100000000)}억`}>
             <div className="space-y-2">
-              <div className="text-[12px] text-slate-600">공급사 {MARKET_DATA.domestic.suppliers}개 · 조달 단가 {MARKET_DATA.domestic.avgPricePerCN}/CN</div>
+              <div className="text-[12px] text-slate-600">{MARKET_DATA.domestic.totalMarketNote}</div>
+              <div className="text-[12px] text-blue-700 font-medium mt-1">{MARKET_DATA.domestic.tamNote}</div>
+              <div className="text-[12px] text-slate-600 mt-1">조달단가: {MARKET_DATA.domestic.avgPricePerCN}</div>
+              <div className="text-[11px] text-slate-500">연간 물량: {MARKET_DATA.domestic.annualQuantity}</div>
               <div className="flex flex-wrap gap-1.5 mt-2">
                 {MARKET_DATA.domestic.mainCompetitors.map((c) => (
                   <Badge key={c} label={c} color="bg-slate-100 text-slate-600" />
                 ))}
               </div>
+              <p className="text-[10px] text-slate-400 mt-1">{MARKET_DATA.domestic.competitorNote}</p>
             </div>
           </ChartCard>
           <ChartCard title="글로벌 CLP 시장" subtitle={`2025 ${MARKET_DATA.global.marketSize2025} → 2033 ${MARKET_DATA.global.marketSize2033}`}>
