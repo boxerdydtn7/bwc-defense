@@ -328,8 +328,11 @@ export const MILESTONES: Milestone[] = [
   { id: "ms-12", date: "2026-07-03", title: "배성재 팀장 B2B 조사 완료", track: "T1", category: "k_clp", done: false },
   { id: "ms-05", date: "2026-07-31", title: "K-CLP 시험성적서 3종 완료", track: "T1", category: "k_clp", done: false },
   { id: "ms-06", date: "2026-09-30", title: "한화·로템 등 체계업체 1차 접촉", track: "T3", category: "defense_venture", done: false },
-  { id: "ms-07", date: "2026-09-30", title: "우수상용품 하반기 차수 신청서 작성", track: "T1", category: "k_clp", done: false },
-  { id: "ms-08", date: "2026-10-31", title: "우수상용품 시범부대 지정", track: "T1", category: "k_clp", done: false },
+  { id: "ms-13", date: "2026-06-13", title: "⚠ KIP 전화 — 하반기 접수 마감일 확인 (긴급)", track: "T1", category: "k_clp", done: false },
+  { id: "ms-14", date: "2026-06-13", title: "⚠ 시험성적서 3종 최단 완료일 확인 (긴급)", track: "T1", category: "k_clp", done: false },
+  { id: "ms-15", date: "2026-06-27", title: "제품설명서·품질관리계획서 초안 완료", track: "T1", category: "k_clp", done: false },
+  { id: "ms-07", date: "2026-07-04", title: "⚠ 우수상용품 하반기 온라인 접수 (추정 마감)", track: "T1", category: "k_clp", done: false },
+  { id: "ms-08", date: "2026-09-30", title: "대면평가 발표자료 준비 완료", track: "T1", category: "k_clp", done: false },
   { id: "ms-09", date: "2026-12-31", title: "체계업체 1개사 공동개발 MOU 가능 여부 확인", track: "T3", category: "defense_venture", done: false },
   { id: "ms-10", date: "2027-03-31", title: "혁신기술 과제 신청", track: "T2", category: "defense_venture", done: false },
 ];
@@ -811,6 +814,259 @@ export const MEETING_NOTES: MeetingNote[] = [
       { task: "인원별 R&R 분배 명확화", assignee: "김승만(PM)", deadline: "2026-06-30", done: false },
     ],
   },
+];
+
+// ─────────────────────────────────────────
+// 우수상용품 시범사용 — 긴급 액션플랜
+// ─────────────────────────────────────────
+export type ActionUrgency = "critical" | "urgent" | "normal";
+export type ActionStatus = "not_started" | "in_progress" | "done" | "blocked";
+
+export interface ActionItem {
+  id: string;
+  phase: string;
+  task: string;
+  assignee: string;
+  deadline: string;
+  urgency: ActionUrgency;
+  status: ActionStatus;
+  note?: string;
+  reference?: string;
+}
+
+export interface KCLPPhase {
+  id: string;
+  step: number;
+  title: string;
+  period: string;
+  description: string;
+  status: ActionStatus;
+  details: string[];
+}
+
+// 우수상용품 시범사용 전체 절차 (연 2회: 상·하반기)
+export const KCLP_PROCESS_PHASES: KCLPPhase[] = [
+  {
+    id: "phase-01", step: 1,
+    title: "접수 (온라인 신청)",
+    period: "하반기: 5월~7월초 (추정)",
+    description: "한국조달연구원(KIP) 홈페이지에서 온라인 접수. 수시 접수 가능하나 평가는 연 2회.",
+    status: "not_started",
+    details: [
+      "신청서 (별지 제12호 서식)",
+      "제품설명서",
+      "시험성적서 (KOLAS 인정기관 발급 필수)",
+      "서약서",
+      "사업자등록증 사본",
+      "공공기관 제출용 신용평가등급확인서",
+      "품질관리계획서",
+      "제품설명책자 (디렉토리북)",
+    ],
+  },
+  {
+    id: "phase-02", step: 2,
+    title: "서류심사",
+    period: "접수 마감 후 약 1개월",
+    description: "제출 서류 기반 1차 심사. 시험성적서·인증서류 완비 여부 확인.",
+    status: "not_started",
+    details: ["신청서 완비 여부 확인", "KOLAS 시험성적서 유효성 검증", "기업 자격 요건 심사"],
+  },
+  {
+    id: "phase-03", step: 3,
+    title: "대면평가",
+    period: "서류심사 통과 후 약 1개월",
+    description: "평가위원 앞에서 제품 설명 및 시연. 군 적합성·기술품질성·시장혁신성 3개 분야 평가. 최고·최저 점수 제외 평균 60점 이상 통과.",
+    status: "not_started",
+    details: [
+      "평가 분야: 군 적합성 / 기술·품질성 / 시장·혁신성",
+      "BB등급 이상: 2개 분야 탁월 → 추천품목 선정",
+      "B등급: 1개 분야 탁월 → 추천품목",
+      "합격선: 평균 60점 이상 (최고·최저 제외)",
+    ],
+  },
+  {
+    id: "phase-04", step: 4,
+    title: "현장실사",
+    period: "대면평가 통과 후 1~2개월",
+    description: "업체 방문 현장 검증. 생산설비·품질관리 체계 확인.",
+    status: "not_started",
+    details: ["생산설비 확인", "품질관리체계 검증", "납품 능력 평가"],
+  },
+  {
+    id: "phase-05", step: 5,
+    title: "제품설명회",
+    period: "현장실사 후",
+    description: "군 수요부대 대상 제품 설명 및 홍보. 시범사용 부대 매칭.",
+    status: "not_started",
+    details: ["군 수요부대 대상 발표", "제품 시연", "시범사용 부대 매칭"],
+  },
+  {
+    id: "phase-06", step: 6,
+    title: "시범사용 품목 선정 (국방부 위원회)",
+    period: "설명회 후 1~2개월",
+    description: "각 군 소요종합 후 국방부 주관 위원회에서 최종 선정. 소량 구매 → 시범부대 사용.",
+    status: "not_started",
+    details: ["각 군 소요 종합", "국방부 위원회 심의", "시범사용 부대 지정", "소량 구매 집행"],
+  },
+  {
+    id: "phase-07", step: 7,
+    title: "운용적합성 평가 → 군수품 채택",
+    period: "시범사용 후 6~12개월",
+    description: "시범부대 운용 후 적합성 평가. 통과 시 정식 군수품 채택, 국방장관 명의 지정서 수여.",
+    status: "not_started",
+    details: [
+      "시범부대 운용 결과 평가",
+      "국방장관 명의 지정서 수여",
+      "조달청 국방상용물자 전용몰 등록",
+      "조달청 벤처나라 추천",
+      "군 수요 발생 시 우선구매",
+    ],
+  },
+];
+
+// 과거 접수 패턴 (일정 추정용)
+export const KCLP_SCHEDULE_HISTORY = [
+  { year: 2024, half: "상반기", open: "2023-12", close: "2024-02 초", docReview: "2024-03", faceEval: "2024-04", siteInspect: "2024-04~05", selection: "2024-06~07" },
+  { year: 2024, half: "하반기", open: "2024-05", close: "2024-07 초", docReview: "2024-08", faceEval: "2024-09~10", siteInspect: "2024-10~11", selection: "2024-12~01" },
+  { year: 2025, half: "상반기", open: "2024-12-11", close: "2025-02-03", docReview: "2025-03 초", faceEval: "2025-04 초", siteInspect: "2025-04~05", selection: "2025-06~07" },
+  { year: 2025, half: "하반기", open: "2025-05-12", close: "2025-07-04", docReview: "2025-08", faceEval: "2025-09~10", siteInspect: "2025-10~11", selection: "2025-12~01" },
+  { year: 2026, half: "상반기", open: "2025-12-16", close: "2026-02 초 (추정)", docReview: "2026-03", faceEval: "2026-04", siteInspect: "2026-04~05", selection: "2026-06~07" },
+  { year: 2026, half: "하반기", open: "2026-05~06 (추정)", close: "2026-07 초 (추정)", docReview: "2026-08 (추정)", faceEval: "2026-09~10 (추정)", siteInspect: "2026-10~11 (추정)", selection: "2026-12~01 (추정)" },
+];
+
+// 긴급 액션 아이템
+export const KCLP_ACTION_ITEMS: ActionItem[] = [
+  {
+    id: "act-01", phase: "즉시 (이번 주)",
+    task: "한국조달연구원 전화 → 2026 하반기 접수 마감일 확인",
+    assignee: "정창기 / 최은진",
+    deadline: "2026-06-13",
+    urgency: "critical",
+    status: "not_started",
+    note: "☎ 02-796-8234 (물자분야 내선603). 접수 마감이 7월초면 시험성적서 일정과 충돌!",
+    reference: "https://www.kip.re.kr/kip/national",
+  },
+  {
+    id: "act-02", phase: "즉시 (이번 주)",
+    task: "시험성적서 3종 최단 완료일 확인 (7월말→당길 수 있는지)",
+    assignee: "김태형 (BIT)",
+    deadline: "2026-06-13",
+    urgency: "critical",
+    status: "not_started",
+    note: "저온유동성·염수분무·윤활성 중 완료된 항목 파악. KTR/FITI 시험 소요기간 재확인.",
+  },
+  {
+    id: "act-03", phase: "즉시 (이번 주)",
+    task: "시험성적서 미완 상태에서 접수 가능 여부 확인 (보완 접수)",
+    assignee: "정창기",
+    deadline: "2026-06-13",
+    urgency: "critical",
+    status: "not_started",
+    note: "KIP에 문의: 접수 먼저 하고 서류심사 전까지 시험성적서 보완 제출 가능한지",
+  },
+  {
+    id: "act-04", phase: "1주차 (6/9~6/13)",
+    task: "신청서 양식 다운로드 및 작성 착수 (별지 제12호)",
+    assignee: "정창기",
+    deadline: "2026-06-20",
+    urgency: "urgent",
+    status: "not_started",
+    reference: "https://law.go.kr/flDownload.do?flSeq=56133459",
+  },
+  {
+    id: "act-05", phase: "1주차 (6/9~6/13)",
+    task: "공공기관 제출용 신용평가등급확인서 발급 신청",
+    assignee: "최은진",
+    deadline: "2026-06-20",
+    urgency: "urgent",
+    status: "not_started",
+    note: "발급에 1~2주 소요 가능. BW/KCC/BIT 중 신청 명의 결정 필요.",
+  },
+  {
+    id: "act-06", phase: "2주차 (6/16~6/20)",
+    task: "제품설명서 초안 작성 (K-CLP 성능 데이터 기반)",
+    assignee: "이정호 + 김태형 (BIT)",
+    deadline: "2026-06-27",
+    urgency: "urgent",
+    status: "not_started",
+    note: "내마모성 0.41mm, 염수분무 60h A급, 습윤상 252h A급 등 핵심 데이터 포함",
+  },
+  {
+    id: "act-07", phase: "2주차 (6/16~6/20)",
+    task: "품질관리계획서 작성",
+    assignee: "이정호 (BIT)",
+    deadline: "2026-06-27",
+    urgency: "urgent",
+    status: "not_started",
+  },
+  {
+    id: "act-08", phase: "2주차 (6/16~6/20)",
+    task: "제품설명책자 (디렉토리북) 디자인 착수",
+    assignee: "신용수 (마케팅)",
+    deadline: "2026-06-30",
+    urgency: "urgent",
+    status: "not_started",
+    note: "KIP 양식 확인 후 제작. 국방색 기반 K 강조 디자인.",
+  },
+  {
+    id: "act-09", phase: "3주차 (6/23~6/27)",
+    task: "서약서 + 사업자등록증 사본 준비",
+    assignee: "최은진",
+    deadline: "2026-06-27",
+    urgency: "normal",
+    status: "not_started",
+    note: "BW/KCC/BIT 명의 확정 후 해당 법인 사업자등록증",
+  },
+  {
+    id: "act-10", phase: "3주차 (6/23~6/27)",
+    task: "신청서 최종 검토 및 온라인 접수",
+    assignee: "정창기 + 최은진",
+    deadline: "2026-07-04",
+    urgency: "critical",
+    status: "not_started",
+    note: "접수 마감 추정일 기준. KIP 확인 후 실제 마감일로 조정 필요.",
+    reference: "https://www.kip.re.kr/kip/national",
+  },
+  {
+    id: "act-11", phase: "대면평가 준비 (8~9월)",
+    task: "대면평가 발표자료 + 제품 시연 준비",
+    assignee: "배성재 + 이정호",
+    deadline: "2026-09-15",
+    urgency: "normal",
+    status: "not_started",
+    note: "군 적합성·기술품질성·시장혁신성 3개 분야 준비. 60점 이상(최고·최저 제외) 통과 기준.",
+  },
+  {
+    id: "act-12", phase: "대면평가 준비 (8~9월)",
+    task: "현장실사 대비 생산라인 정비 (양산공장)",
+    assignee: "김승만 PM",
+    deadline: "2026-09-30",
+    urgency: "normal",
+    status: "not_started",
+    note: "생산설비·품질관리체계 현장 검증 대비",
+  },
+];
+
+// 제출 서류 체크리스트
+export interface DocChecklist {
+  name: string;
+  assignee: string;
+  status: ActionStatus;
+  note?: string;
+  kolasMark?: boolean;
+}
+
+export const KCLP_DOC_CHECKLIST: DocChecklist[] = [
+  { name: "신청서 (별지 제12호 서식)", assignee: "정창기", status: "not_started" },
+  { name: "제품설명서", assignee: "이정호 + 김태형", status: "not_started" },
+  { name: "시험성적서 — 저온유동성", assignee: "김태형", status: "in_progress", kolasMark: true, note: "KOLAS 인정기관 발급 필수" },
+  { name: "시험성적서 — 염수분무", assignee: "김태형", status: "in_progress", kolasMark: true, note: "KOLAS 인정기관 발급 필수" },
+  { name: "시험성적서 — 윤활성", assignee: "김태형", status: "in_progress", kolasMark: true, note: "KOLAS 인정기관 발급 필수" },
+  { name: "서약서", assignee: "정창기", status: "not_started" },
+  { name: "사업자등록증 사본", assignee: "최은진", status: "done" },
+  { name: "신용평가등급확인서", assignee: "최은진", status: "not_started", note: "발급 1~2주 소요" },
+  { name: "품질관리계획서", assignee: "이정호", status: "not_started" },
+  { name: "제품설명책자 (디렉토리북)", assignee: "신용수", status: "not_started", note: "KIP 양식 확인 필요" },
 ];
 
 // ─────────────────────────────────────────

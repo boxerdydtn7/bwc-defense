@@ -13,6 +13,7 @@ import {
   KCLP_PERFORMANCE, KCLP_COMPETITORS, ASSET_FLOWS, MARKET_DATA,
   RESEARCH_REFS, MEETING_NOTES, MILITARY_LOGISTICS,
   MILITARY_REPLACEMENTS, RR_DETAILS,
+  KCLP_PROCESS_PHASES, KCLP_SCHEDULE_HISTORY, KCLP_ACTION_ITEMS, KCLP_DOC_CHECKLIST,
   getProjectsByCategory, getUpcomingMilestones, getOverdueMilestones,
 } from "@/data/defense";
 
@@ -101,8 +102,207 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
   categoryProgress: { name: string; value: number }[];
   defenseFieldPie: { name: string; value: number }[];
 }) {
+  const criticalActions = KCLP_ACTION_ITEMS.filter((a) => a.urgency === "critical" && a.status !== "done");
+  const doneDocCount = KCLP_DOC_CHECKLIST.filter((d) => d.status === "done").length;
+
   return (
     <>
+      {/* 🚨 긴급 액션플랜 — 우수상용품 시범사용 */}
+      <div className="border-2 border-red-300 rounded-2xl bg-gradient-to-br from-red-50 via-white to-amber-50 p-5 sm:p-6 shadow-sm">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="w-10 h-10 rounded-xl bg-red-500 flex items-center justify-center text-white text-lg font-bold shadow-sm animate-pulse">!</span>
+          <div>
+            <h2 className="text-[17px] font-bold text-red-800">긴급 액션플랜 — K-CLP 우수상용품 시범사용</h2>
+            <p className="text-[12px] text-red-600 mt-0.5">
+              하반기 접수 마감 추정: <span className="font-bold">2026년 7월초</span> · 시험성적서 완료 예정: 7월말 →
+              <span className="font-bold text-red-700"> 타이밍 충돌 가능</span>
+            </p>
+          </div>
+        </div>
+
+        {/* 핵심 경고 */}
+        <div className="bg-red-100 border border-red-200 rounded-xl p-4 mb-5">
+          <h3 className="text-[13px] font-bold text-red-800 mb-2">⚠ 핵심 리스크</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[12px]">
+            <div className="bg-white rounded-lg p-3 border border-red-100">
+              <div className="text-red-600 font-semibold mb-1">과거 하반기 마감일</div>
+              <div className="text-slate-700">2024: 7월초 / 2025: 7월 4일</div>
+            </div>
+            <div className="bg-white rounded-lg p-3 border border-red-100">
+              <div className="text-red-600 font-semibold mb-1">시험성적서 3종 예정</div>
+              <div className="text-slate-700">현재 완료 예정: <span className="font-bold">7월 31일</span></div>
+            </div>
+            <div className="bg-white rounded-lg p-3 border border-red-100">
+              <div className="text-red-600 font-semibold mb-1">놓치면?</div>
+              <div className="text-slate-700">2027년 상반기(12월) → <span className="font-bold text-red-600">6개월 공백</span></div>
+            </div>
+          </div>
+        </div>
+
+        {/* 긴급 액션 (이번 주) */}
+        <h3 className="text-[14px] font-bold text-slate-800 mb-3 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+          이번 주 즉시 실행 (6/9~6/13)
+        </h3>
+        <div className="space-y-2 mb-5">
+          {criticalActions.filter((a) => a.phase.includes("이번 주")).map((a) => {
+            const statusIcon = a.status === "done" ? "✅" : a.status === "in_progress" ? "🔄" : "⬜";
+            return (
+              <div key={a.id} className="flex items-start gap-3 bg-white border border-red-200 rounded-xl p-3 hover:shadow-sm transition-shadow">
+                <span className="text-[16px] mt-0.5 shrink-0">{statusIcon}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-[13px] font-bold text-slate-900">{a.task}</span>
+                    <Badge label="긴급" color="bg-red-100 text-red-700" />
+                  </div>
+                  <div className="text-[11px] text-slate-500 mt-0.5">담당: {a.assignee} · 마감: {a.deadline}</div>
+                  {a.note && <p className="text-[11px] text-red-600 mt-1 bg-red-50 rounded px-2 py-0.5">{a.note}</p>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* 전체 액션플랜 타임라인 */}
+        <details className="group mb-5">
+          <summary className="cursor-pointer text-[13px] font-bold text-slate-700 hover:text-slate-900 flex items-center gap-2">
+            <span className="group-open:rotate-90 transition-transform text-slate-400">▶</span>
+            전체 액션플랜 ({KCLP_ACTION_ITEMS.length}개 항목)
+          </summary>
+          <div className="mt-3 space-y-2">
+            {KCLP_ACTION_ITEMS.map((a) => {
+              const urgColor = a.urgency === "critical" ? "border-red-200 bg-red-50/30" : a.urgency === "urgent" ? "border-amber-200 bg-amber-50/30" : "border-slate-200";
+              const statusIcon = a.status === "done" ? "✅" : a.status === "in_progress" ? "🔄" : a.status === "blocked" ? "🚫" : "⬜";
+              const urgLabel = a.urgency === "critical" ? "긴급" : a.urgency === "urgent" ? "중요" : "일반";
+              const urgBadge = a.urgency === "critical" ? "bg-red-100 text-red-700" : a.urgency === "urgent" ? "bg-amber-100 text-amber-700" : "bg-slate-100 text-slate-600";
+              return (
+                <div key={a.id} className={`flex items-start gap-3 border rounded-lg p-3 ${urgColor}`}>
+                  <span className="text-[14px] mt-0.5 shrink-0">{statusIcon}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-[12px] font-semibold text-slate-800">{a.task}</span>
+                      <Badge label={urgLabel} color={urgBadge} />
+                      <Badge label={a.phase} color="bg-slate-100 text-slate-600" />
+                    </div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">담당: {a.assignee} · 마감: {a.deadline}</div>
+                    {a.note && <p className="text-[11px] text-slate-500 mt-0.5">{a.note}</p>}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </details>
+
+        {/* 제출 서류 체크리스트 */}
+        <details className="group mb-5">
+          <summary className="cursor-pointer text-[13px] font-bold text-slate-700 hover:text-slate-900 flex items-center gap-2">
+            <span className="group-open:rotate-90 transition-transform text-slate-400">▶</span>
+            제출 서류 체크리스트 ({doneDocCount}/{KCLP_DOC_CHECKLIST.length} 완료)
+          </summary>
+          <div className="mt-3 overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="border-b border-slate-200 bg-slate-50">
+                  <th className="text-center py-2 px-2 text-[11px] font-medium text-slate-500 w-8">상태</th>
+                  <th className="text-left py-2 px-3 text-[11px] font-medium text-slate-500">서류명</th>
+                  <th className="text-left py-2 px-3 text-[11px] font-medium text-slate-500">담당</th>
+                  <th className="text-left py-2 px-3 text-[11px] font-medium text-slate-500">비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                {KCLP_DOC_CHECKLIST.map((d) => {
+                  const icon = d.status === "done" ? "✅" : d.status === "in_progress" ? "🔄" : "⬜";
+                  return (
+                    <tr key={d.name} className="border-b border-slate-100 hover:bg-slate-50/50">
+                      <td className="py-2 px-2 text-center text-[14px]">{icon}</td>
+                      <td className="py-2 px-3 text-[12px] text-slate-800">
+                        {d.name}
+                        {d.kolasMark && <span className="ml-1 text-[10px] text-blue-600 font-semibold">[KOLAS]</span>}
+                      </td>
+                      <td className="py-2 px-3 text-[12px] text-slate-600">{d.assignee}</td>
+                      <td className="py-2 px-3 text-[11px] text-slate-400">{d.note || ""}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        {/* 절차 로드맵 */}
+        <details className="group">
+          <summary className="cursor-pointer text-[13px] font-bold text-slate-700 hover:text-slate-900 flex items-center gap-2">
+            <span className="group-open:rotate-90 transition-transform text-slate-400">▶</span>
+            우수상용품 시범사용 전체 절차 (7단계)
+          </summary>
+          <div className="mt-3 space-y-0">
+            {KCLP_PROCESS_PHASES.map((p, i) => {
+              const isLast = i === KCLP_PROCESS_PHASES.length - 1;
+              const stepColor = p.step <= 2 ? "bg-red-500" : p.step <= 4 ? "bg-amber-500" : "bg-slate-400";
+              return (
+                <div key={p.id} className="flex gap-3">
+                  <div className="flex flex-col items-center">
+                    <div className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-[11px] font-bold shrink-0 ${stepColor}`}>{p.step}</div>
+                    {!isLast && <div className="w-px flex-1 bg-slate-200 my-1" />}
+                  </div>
+                  <div className="pb-4 flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-[13px] font-bold text-slate-900">{p.title}</span>
+                      <span className="text-[11px] text-slate-400">{p.period}</span>
+                    </div>
+                    <p className="text-[12px] text-slate-600 mt-0.5">{p.description}</p>
+                    <div className="mt-1.5 flex flex-wrap gap-1">
+                      {p.details.map((d, j) => (
+                        <span key={j} className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">{d}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* 과거 접수 일정 패턴 */}
+          <div className="mt-4 border-t border-slate-200 pt-3">
+            <h4 className="text-[12px] font-semibold text-slate-600 mb-2">과거 접수 패턴 (일정 추정 근거)</h4>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-slate-200 bg-slate-50">
+                    <th className="text-left py-1.5 px-2 text-[10px] font-medium text-slate-500">연도</th>
+                    <th className="text-left py-1.5 px-2 text-[10px] font-medium text-slate-500">차수</th>
+                    <th className="text-left py-1.5 px-2 text-[10px] font-medium text-slate-500">접수 시작</th>
+                    <th className="text-left py-1.5 px-2 text-[10px] font-medium text-slate-500">접수 마감</th>
+                    <th className="text-left py-1.5 px-2 text-[10px] font-medium text-slate-500">서류심사</th>
+                    <th className="text-left py-1.5 px-2 text-[10px] font-medium text-slate-500">대면평가</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {KCLP_SCHEDULE_HISTORY.map((h, i) => {
+                    const isCurrent = h.year === 2026 && h.half === "하반기";
+                    return (
+                      <tr key={i} className={`border-b border-slate-100 ${isCurrent ? "bg-red-50 font-semibold" : ""}`}>
+                        <td className="py-1.5 px-2 text-[11px] text-slate-700">{h.year}</td>
+                        <td className="py-1.5 px-2 text-[11px] text-slate-700">{h.half}</td>
+                        <td className="py-1.5 px-2 text-[11px] text-slate-600">{h.open}</td>
+                        <td className={`py-1.5 px-2 text-[11px] ${isCurrent ? "text-red-700 font-bold" : "text-slate-600"}`}>{h.close}</td>
+                        <td className="py-1.5 px-2 text-[11px] text-slate-600">{h.docReview}</td>
+                        <td className="py-1.5 px-2 text-[11px] text-slate-600">{h.faceEval}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-[10px] text-slate-400 mt-1.5">
+              출처: <a href="https://www.kip.re.kr/kip/national" className="text-blue-500 underline" target="_blank" rel="noreferrer">한국조달연구원</a> ·
+              <a href="https://www.bizinfo.go.kr" className="text-blue-500 underline ml-1" target="_blank" rel="noreferrer">기업마당</a> ·
+              ☎ 02-796-8234 (물자분야 내선603)
+            </p>
+          </div>
+        </details>
+      </div>
+
       {/* KPI */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <KpiCard label="추진 프로젝트" value={`${totalProjects}개`} icon="🛡" accent="olive" sub={`진행 중 ${inProgressCount}개`} />
