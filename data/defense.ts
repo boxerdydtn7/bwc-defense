@@ -331,7 +331,7 @@ export const MILESTONES: Milestone[] = [
   { id: "ms-13", date: "2026-06-13", title: "⚠ KIP 전화 — 하반기 접수 마감일 확인 (긴급)", track: "T1", category: "k_clp", done: false },
   { id: "ms-14", date: "2026-06-13", title: "⚠ 시험성적서 3종 최단 완료일 확인 (긴급)", track: "T1", category: "k_clp", done: false },
   { id: "ms-15", date: "2026-06-27", title: "제품설명서·품질관리계획서 초안 완료", track: "T1", category: "k_clp", done: false },
-  { id: "ms-07", date: "2026-07-04", title: "⚠ 우수상용품 하반기 온라인 접수 (추정 마감)", track: "T1", category: "k_clp", done: false },
+  { id: "ms-07", date: "2026-07-31", title: "🔴 우수상용품 하반기 온라인 접수 마감 (확정)", track: "T1", category: "k_clp", done: false },
   { id: "ms-08", date: "2026-09-30", title: "대면평가 발표자료 준비 완료", track: "T1", category: "k_clp", done: false },
   { id: "ms-09", date: "2026-12-31", title: "체계업체 1개사 공동개발 MOU 가능 여부 확인", track: "T3", category: "defense_venture", done: false },
   { id: "ms-10", date: "2027-03-31", title: "혁신기술 과제 신청", track: "T2", category: "defense_venture", done: false },
@@ -849,7 +849,7 @@ export const KCLP_PROCESS_PHASES: KCLPPhase[] = [
   {
     id: "phase-01", step: 1,
     title: "접수 (온라인 신청)",
-    period: "하반기: 5월~7월초 (추정)",
+    period: "하반기: 2026-06-04 공고 → 2026-07-31 마감 (확정)",
     description: "한국조달연구원(KIP) 홈페이지에서 온라인 접수. 수시 접수 가능하나 평가는 연 2회.",
     status: "not_started",
     details: [
@@ -931,20 +931,20 @@ export const KCLP_SCHEDULE_HISTORY = [
   { year: 2025, half: "상반기", open: "2024-12-11", close: "2025-02-03", docReview: "2025-03 초", faceEval: "2025-04 초", siteInspect: "2025-04~05", selection: "2025-06~07" },
   { year: 2025, half: "하반기", open: "2025-05-12", close: "2025-07-04", docReview: "2025-08", faceEval: "2025-09~10", siteInspect: "2025-10~11", selection: "2025-12~01" },
   { year: 2026, half: "상반기", open: "2025-12-16", close: "2026-02 초 (추정)", docReview: "2026-03", faceEval: "2026-04", siteInspect: "2026-04~05", selection: "2026-06~07" },
-  { year: 2026, half: "하반기", open: "2026-05~06 (추정)", close: "2026-07 초 (추정)", docReview: "2026-08 (추정)", faceEval: "2026-09~10 (추정)", siteInspect: "2026-10~11 (추정)", selection: "2026-12~01 (추정)" },
+  { year: 2026, half: "하반기", open: "2026-06-04", close: "2026-07-31 (확정)", docReview: "2026-08~09", faceEval: "2026-10~11", siteInspect: "2026-11~12", selection: "2027-01~02" },
 ];
 
 // 긴급 액션 아이템
 export const KCLP_ACTION_ITEMS: ActionItem[] = [
   {
-    id: "act-01", phase: "즉시 (이번 주)",
+    id: "act-01", phase: "✅ 완료",
     task: "한국조달연구원 전화 → 2026 하반기 접수 마감일 확인",
     assignee: "정창기 / 최은진",
     deadline: "2026-06-13",
     urgency: "critical",
-    status: "not_started",
-    note: "☎ 02-796-8234 (물자분야 내선603). 접수 마감이 7월초면 시험성적서 일정과 충돌!",
-    reference: "https://www.kip.re.kr/kip/national",
+    status: "done",
+    note: "✅ 확인 완료: 마감일 2026-07-31 (7월말). 공고번호 KIP-2026-하반기. 공고일: 2026-06-04.",
+    reference: "https://www.kip.re.kr/kip/brd/selectBoardArticle.do?brd_id=3210",
   },
   {
     id: "act-02", phase: "즉시 (이번 주)",
@@ -1018,14 +1018,14 @@ export const KCLP_ACTION_ITEMS: ActionItem[] = [
     note: "BW/KCC/BIT 명의 확정 후 해당 법인 사업자등록증",
   },
   {
-    id: "act-10", phase: "3주차 (6/23~6/27)",
+    id: "act-10", phase: "4주차 (7/21~7/25)",
     task: "신청서 최종 검토 및 온라인 접수",
     assignee: "정창기 + 최은진",
-    deadline: "2026-07-04",
+    deadline: "2026-07-25",
     urgency: "critical",
     status: "not_started",
-    note: "접수 마감 추정일 기준. KIP 확인 후 실제 마감일로 조정 필요.",
-    reference: "https://www.kip.re.kr/kip/national",
+    note: "마감일 7/31 확정. 여유있게 7/25까지 접수 목표. 불비서류 보완 기간 확보.",
+    reference: "https://www.kip.re.kr/kip/brd/selectBoardArticle.do?brd_id=3210",
   },
   {
     id: "act-11", phase: "대면평가 준비 (8~9월)",
@@ -1067,6 +1067,187 @@ export const KCLP_DOC_CHECKLIST: DocChecklist[] = [
   { name: "신용평가등급확인서", assignee: "최은진", status: "not_started", note: "발급 1~2주 소요" },
   { name: "품질관리계획서", assignee: "이정호", status: "not_started" },
   { name: "제품설명책자 (디렉토리북)", assignee: "신용수", status: "not_started", note: "KIP 양식 확인 필요" },
+];
+
+// ─────────────────────────────────────────
+// KIP 공고 제출서류 R&R (붙임 1~6 기반)
+// ─────────────────────────────────────────
+export interface KIPDocument {
+  id: string;
+  attachment: string;       // 붙임 번호
+  title: string;
+  format: string;           // HWP/PDF/XLSX
+  description: string;
+  assignee: string;
+  supporter: string;
+  deadline: string;
+  status: ActionStatus;
+  fields?: string[];        // 주요 기입 항목
+  note?: string;
+}
+
+export const KIP_SUBMISSION_DOCS: KIPDocument[] = [
+  {
+    id: "kip-doc-01",
+    attachment: "붙임 1",
+    title: "2026년 하반기 우수 상용품 시범사용 제안품목 신청접수 공고문",
+    format: "HWP",
+    description: "공고문 원본. 접수 기간, 신청 자격, 평가 기준, 일정 등 전체 절차 안내.",
+    assignee: "정창기 (BW)",
+    supporter: "최은진 (BWC)",
+    deadline: "2026-06-13",
+    status: "done",
+    note: "공고일 2026-06-04, 마감일 2026-07-31 확정. 전원 숙지 필요.",
+  },
+  {
+    id: "kip-doc-02",
+    attachment: "붙임 2",
+    title: "제안서 작성 및 신청방법 (71페이지)",
+    format: "PDF",
+    description: "제안서 작성 가이드. 온라인 접수 방법, 각 양식별 작성 요령, 평가 기준 상세 해설.",
+    assignee: "정창기 (BW)",
+    supporter: "배성재 (KCC)",
+    deadline: "2026-06-20",
+    status: "not_started",
+    fields: [
+      "온라인 접수 절차 (KIP 홈페이지)",
+      "제안서 각 섹션 작성 요령",
+      "평가 기준 상세 (군 적합성/기술품질성/시장혁신성)",
+      "대면평가 준비 가이드",
+      "제출 서류 목록 및 유의사항",
+    ],
+    note: "71페이지 분량. 전원 정독 필수. 특히 평가 배점·감점 기준 숙지.",
+  },
+  {
+    id: "kip-doc-03",
+    attachment: "붙임 3",
+    title: "제출서류 및 평가양식",
+    format: "HWP",
+    description: "제출 서류 목록, 평가표 양식, 서약서 양식, 신청서 양식 (별지 제12호) 포함.",
+    assignee: "정창기 (BW)",
+    supporter: "최은진 (BWC)",
+    deadline: "2026-06-27",
+    status: "not_started",
+    fields: [
+      "신청서 (별지 제12호 서식)",
+      "서약서",
+      "평가표 양식 (군 적합성/기술품질성/시장혁신성)",
+    ],
+    note: "정창기가 신청서 작성, 최은진이 서류 취합·검토.",
+  },
+  {
+    id: "kip-doc-04",
+    attachment: "붙임 4",
+    title: "우수상용품 시범사용 제도 신청제품정보 제출양식",
+    format: "XLSX",
+    description: "엑셀 양식. 54개 컬럼: 기업정보(20여 항목) + 인증현황(11항목) + 제품정보(15항목).",
+    assignee: "최은진 (BWC)",
+    supporter: "정창기 (BW) + 이정호 (BIT)",
+    deadline: "2026-07-04",
+    status: "not_started",
+    fields: [
+      "기업정보: 사업자등록번호, 대표자명, 설립년도, 상시근로자수, 업종, 총자산, 자본금, 신용등급, 최근5년평균매출액",
+      "인증현황: 기술혁신기업, 벤처기업, 여성기업, 장애인기업, 사회적기업, 벤처나라등록, 다수공급자계약",
+      "제품정보: 특허/실용신안/디자인, KC/KS/CE인증, 성능인증, 혁신제품, GS인증, 신기술/신제품, 국산화여부/율",
+      "해당없는 항목은 X표시, 엑셀파일로 제출",
+    ],
+    note: "최은진이 기업정보, 이정호가 제품·인증 정보 기입. 반드시 엑셀 그대로 제출.",
+  },
+  {
+    id: "kip-doc-05",
+    attachment: "붙임 5 (별첨 1)",
+    title: "제품설명책자 (디렉토리북) 작성양식",
+    format: "HWP",
+    description: "제품 소개 책자 양식. 회사명, 제품명, 주소, 연락처, 제품설명, 사진 포함.",
+    assignee: "신용수 (BEX/마케팅)",
+    supporter: "이정호 (BIT) + 김태형 (BIT)",
+    deadline: "2026-07-11",
+    status: "not_started",
+    fields: [
+      "회사명 / 제품명 (Product Name)",
+      "주소 (Address) / 전화 (Tel) / FAX / E-Mail / Website",
+      "담당자 (Contact)",
+      "제품설명 (Product Description)",
+      "제품 사진",
+    ],
+    note: "마케팅팀에서 디자인. 국방색 기반 K 강조 컨셉. BIT에서 기술 스펙 데이터 제공.",
+  },
+  {
+    id: "kip-doc-06",
+    attachment: "붙임 6 (별첨 2)",
+    title: "품질관리계획서 서식",
+    format: "HWP",
+    description: "생산 공정, 품질관리 체계, 검사 절차, 불량 대응 계획 등 기술.",
+    assignee: "이정호 (BIT)",
+    supporter: "김태형 (BIT) + 김승만 (PM)",
+    deadline: "2026-07-11",
+    status: "not_started",
+    fields: [
+      "생산 공정 흐름도",
+      "원자재 입고 검사 기준",
+      "공정 중 품질관리 항목",
+      "완제품 검사 기준·절차",
+      "불량 발생 시 대응 프로세스",
+      "시정·예방 조치 체계",
+    ],
+    note: "BIT 양산공장 기준 작성. 현장실사 대비도 겸함.",
+  },
+];
+
+// ─────────────────────────────────────────
+// 주요 참조 링크
+// ─────────────────────────────────────────
+export interface ReferenceLink {
+  id: string;
+  label: string;
+  url: string;
+  category: string;
+  description: string;
+}
+
+export const REFERENCE_LINKS: ReferenceLink[] = [
+  {
+    id: "ref-link-01",
+    label: "KIP 공고 원문",
+    url: "https://www.kip.re.kr/kip/brd/selectBoardArticle.do?brd_id=3210",
+    category: "공고",
+    description: "2026년 하반기 우수 상용품 시범사용 제안품목 신청접수 공고문 (2026-06-04 게시)",
+  },
+  {
+    id: "ref-link-02",
+    label: "KIP 우수상용품 메인",
+    url: "https://www.kip.re.kr/kip/national",
+    category: "공고",
+    description: "한국조달연구원 우수상용품 시범사용 제도 메인 페이지",
+  },
+  {
+    id: "ref-link-03",
+    label: "방위사업청 우수상용품 규정",
+    url: "https://law.go.kr/flDownload.do?flSeq=56133459",
+    category: "법규",
+    description: "군수품관리법 시행규칙 별지 제12호 서식 (신청서 양식)",
+  },
+  {
+    id: "ref-link-04",
+    label: "GitHub 대시보드",
+    url: "https://boxerdydtn7.github.io/bwc-defense/",
+    category: "대시보드",
+    description: "범우연합 방산TF 대시보드 (GitHub Pages)",
+  },
+  {
+    id: "ref-link-05",
+    label: "GitHub 저장소",
+    url: "https://github.com/boxerdydtn7/bwc-defense",
+    category: "대시보드",
+    description: "방산TF 대시보드 소스코드 저장소",
+  },
+  {
+    id: "ref-link-06",
+    label: "KIP 전화번호",
+    url: "tel:02-796-8234",
+    category: "연락처",
+    description: "한국조달연구원 물자분야 내선 603",
+  },
 ];
 
 // ─────────────────────────────────────────

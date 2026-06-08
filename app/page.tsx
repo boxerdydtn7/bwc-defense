@@ -14,6 +14,7 @@ import {
   RESEARCH_REFS, MEETING_NOTES, MILITARY_LOGISTICS,
   MILITARY_REPLACEMENTS, RR_DETAILS,
   KCLP_PROCESS_PHASES, KCLP_SCHEDULE_HISTORY, KCLP_ACTION_ITEMS, KCLP_DOC_CHECKLIST,
+  KIP_SUBMISSION_DOCS, REFERENCE_LINKS,
   getProjectsByCategory, getUpcomingMilestones, getOverdueMilestones,
 } from "@/data/defense";
 
@@ -112,25 +113,52 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
         <div className="flex items-center gap-3 mb-4">
           <span className="w-10 h-10 rounded-xl bg-red-500 flex items-center justify-center text-white text-lg font-bold shadow-sm animate-pulse">!</span>
           <div>
-            <h2 className="text-[17px] font-bold text-red-800">긴급 액션플랜 — K-CLP 우수상용품 시범사용</h2>
+            <h2 className="text-[17px] font-bold text-red-800">K-CLP 우수상용품 시범사용 — 접수 마감 7/31 확정</h2>
             <p className="text-[12px] text-red-600 mt-0.5">
-              하반기 접수 마감 추정: <span className="font-bold">2026년 7월초</span> · 시험성적서 완료 예정: 7월말 →
-              <span className="font-bold text-red-700"> 타이밍 충돌 가능</span>
+              하반기 접수 마감: <span className="font-bold text-red-700">2026년 7월 31일 (확정)</span> · 공고일: 2026-06-04 ·
+              <span className="font-bold"> D-{Math.max(0, Math.ceil((new Date("2026-07-31").getTime() - Date.now()) / 86400000))}</span>
             </p>
           </div>
         </div>
 
-        {/* 핵심 경고 */}
-        <div className="bg-red-100 border border-red-200 rounded-xl p-4 mb-5">
-          <h3 className="text-[13px] font-bold text-red-800 mb-2">⚠ 핵심 리스크</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[12px]">
-            <div className="bg-white rounded-lg p-3 border border-red-100">
-              <div className="text-red-600 font-semibold mb-1">과거 하반기 마감일</div>
-              <div className="text-slate-700">2024: 7월초 / 2025: 7월 4일</div>
+        {/* 일정 개요 */}
+        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-5">
+          <h3 className="text-[13px] font-bold text-emerald-800 mb-2">📋 핵심 일정 (확정)</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 text-[12px]">
+            <div className="bg-white rounded-lg p-3 border border-emerald-100">
+              <div className="text-emerald-600 font-semibold mb-1">접수 마감</div>
+              <div className="text-slate-900 font-bold text-[14px]">7월 31일</div>
+              <div className="text-slate-500 text-[10px]">KIP 공고 확인 완료</div>
             </div>
-            <div className="bg-white rounded-lg p-3 border border-red-100">
-              <div className="text-red-600 font-semibold mb-1">시험성적서 3종 예정</div>
-              <div className="text-slate-700">현재 완료 예정: <span className="font-bold">7월 31일</span></div>
+            <div className="bg-white rounded-lg p-3 border border-emerald-100">
+              <div className="text-emerald-600 font-semibold mb-1">시험성적서 완료</div>
+              <div className="text-slate-900 font-bold text-[14px]">7월 말 예정</div>
+              <div className="text-slate-500 text-[10px]">3종 (저온유동성·염수분무·윤활성)</div>
+            </div>
+            <div className="bg-white rounded-lg p-3 border border-amber-100">
+              <div className="text-amber-600 font-semibold mb-1">서류심사</div>
+              <div className="text-slate-700 font-bold">8~9월</div>
+              <div className="text-slate-500 text-[10px]">접수 마감 후 약 1개월</div>
+            </div>
+            <div className="bg-white rounded-lg p-3 border border-amber-100">
+              <div className="text-amber-600 font-semibold mb-1">대면평가</div>
+              <div className="text-slate-700 font-bold">10~11월</div>
+              <div className="text-slate-500 text-[10px]">60점 이상 통과 (최고·최저 제외)</div>
+            </div>
+          </div>
+        </div>
+
+        {/* 리스크 경고 */}
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-5">
+          <h3 className="text-[13px] font-bold text-amber-800 mb-2">⚠ 리스크 요인</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[12px]">
+            <div className="bg-white rounded-lg p-3 border border-amber-100">
+              <div className="text-amber-600 font-semibold mb-1">시험성적서 vs 마감일</div>
+              <div className="text-slate-700">시험성적서 7월말 완료 vs 접수 7/31 → <span className="font-bold text-amber-600">동시 완료 필요</span></div>
+            </div>
+            <div className="bg-white rounded-lg p-3 border border-amber-100">
+              <div className="text-amber-600 font-semibold mb-1">서류 6종 준비</div>
+              <div className="text-slate-700">신청서·제안서·엑셀양식·디렉토리북·품질관리계획서 등 <span className="font-bold">6종 동시 진행</span></div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-red-100">
               <div className="text-red-600 font-semibold mb-1">놓치면?</div>
@@ -226,6 +254,73 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
                 })}
               </tbody>
             </table>
+          </div>
+        </details>
+
+        {/* KIP 제출서류 R&R (붙임 1~6) */}
+        <details className="group mb-5" open>
+          <summary className="cursor-pointer text-[13px] font-bold text-slate-700 hover:text-slate-900 flex items-center gap-2">
+            <span className="group-open:rotate-90 transition-transform text-slate-400">▶</span>
+            KIP 제출서류 R&R — 붙임 1~6 ({KIP_SUBMISSION_DOCS.filter((d) => d.status === "done").length}/{KIP_SUBMISSION_DOCS.length} 완료)
+          </summary>
+          <div className="mt-3 space-y-3">
+            {KIP_SUBMISSION_DOCS.map((doc) => {
+              const statusIcon = doc.status === "done" ? "✅" : doc.status === "in_progress" ? "🔄" : "⬜";
+              const borderColor = doc.status === "done" ? "border-emerald-200 bg-emerald-50/30" : doc.status === "in_progress" ? "border-blue-200 bg-blue-50/30" : "border-slate-200";
+              const fmtBadge = doc.format === "XLSX" ? "bg-emerald-100 text-emerald-700" : doc.format === "PDF" ? "bg-red-100 text-red-700" : "bg-blue-100 text-blue-700";
+              return (
+                <div key={doc.id} className={`border rounded-xl p-4 ${borderColor}`}>
+                  <div className="flex items-start gap-3">
+                    <span className="text-[16px] mt-0.5 shrink-0">{statusIcon}</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <Badge label={doc.attachment} color="bg-slate-200 text-slate-700" />
+                        <Badge label={doc.format} color={fmtBadge} />
+                        <span className="text-[13px] font-bold text-slate-900">{doc.title}</span>
+                      </div>
+                      <p className="text-[12px] text-slate-600 mt-1">{doc.description}</p>
+                      <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px]">
+                        <div><span className="text-slate-400">담당:</span> <span className="font-semibold text-slate-800">{doc.assignee}</span></div>
+                        <div><span className="text-slate-400">지원:</span> <span className="text-slate-600">{doc.supporter}</span></div>
+                        <div><span className="text-slate-400">마감:</span> <span className="font-semibold text-red-600">{doc.deadline}</span></div>
+                      </div>
+                      {doc.fields && (
+                        <div className="mt-2 flex flex-wrap gap-1">
+                          {doc.fields.map((f, i) => (
+                            <span key={i} className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">{f}</span>
+                          ))}
+                        </div>
+                      )}
+                      {doc.note && <p className="mt-1.5 text-[11px] text-amber-600 bg-amber-50 rounded px-2 py-0.5">{doc.note}</p>}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </details>
+
+        {/* 참조 링크 */}
+        <details className="group mb-5">
+          <summary className="cursor-pointer text-[13px] font-bold text-slate-700 hover:text-slate-900 flex items-center gap-2">
+            <span className="group-open:rotate-90 transition-transform text-slate-400">▶</span>
+            참조 링크 ({REFERENCE_LINKS.length}개)
+          </summary>
+          <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {REFERENCE_LINKS.map((link) => {
+              const catColor = link.category === "공고" ? "bg-red-100 text-red-700" : link.category === "법규" ? "bg-purple-100 text-purple-700" : link.category === "대시보드" ? "bg-blue-100 text-blue-700" : "bg-slate-100 text-slate-600";
+              return (
+                <a key={link.id} href={link.url} target="_blank" rel="noreferrer"
+                  className="border border-slate-200 rounded-xl p-3 hover:border-blue-300 hover:shadow-sm transition-all block">
+                  <div className="flex items-center gap-2 mb-1">
+                    <Badge label={link.category} color={catColor} />
+                    <span className="text-[13px] font-semibold text-blue-700">{link.label}</span>
+                    <span className="text-[10px] text-slate-400 ml-auto">↗</span>
+                  </div>
+                  <p className="text-[11px] text-slate-500">{link.description}</p>
+                </a>
+              );
+            })}
           </div>
         </details>
 
