@@ -278,6 +278,14 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
                         <Badge label={doc.attachment} color="bg-slate-200 text-slate-700" />
                         <Badge label={doc.format} color={fmtBadge} />
                         <span className="text-[13px] font-bold text-slate-900">{doc.title}</span>
+                        <a
+                          href={`/bwc-defense/files/${doc.fileName}`}
+                          download
+                          className="ml-auto shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+                          title={`${doc.fileName} 다운로드`}
+                        >
+                          ⬇ 다운로드
+                        </a>
                       </div>
                       <p className="text-[12px] text-slate-600 mt-1">{doc.description}</p>
                       <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px]">

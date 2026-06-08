@@ -1082,6 +1082,7 @@ export interface KIPDocument {
   attachment: string;       // 붙임 번호
   title: string;
   format: string;           // HWP/PDF/XLSX
+  fileName: string;         // 다운로드 파일명 (public/files/ 하위)
   description: string;
   assignee: string;
   supporter: string;
@@ -1097,6 +1098,7 @@ export const KIP_SUBMISSION_DOCS: KIPDocument[] = [
     attachment: "붙임 1",
     title: "2026년 하반기 우수 상용품 시범사용 제안품목 신청접수 공고문",
     format: "HWP",
+    fileName: "kip_attach_1.hwp",
     description: "공고문 원본. 접수 기간, 신청 자격, 평가 기준, 일정 등 전체 절차 안내.",
     assignee: "정창기 (BW)",
     supporter: "최은진 (BWC)",
@@ -1109,6 +1111,7 @@ export const KIP_SUBMISSION_DOCS: KIPDocument[] = [
     attachment: "붙임 2",
     title: "제안서 작성 및 신청방법 (71페이지)",
     format: "PDF",
+    fileName: "kip_attach_2.pdf",
     description: "제안서 작성 가이드. 온라인 접수 방법, 각 양식별 작성 요령, 평가 기준 상세 해설.",
     assignee: "정창기 (BW)",
     supporter: "배성재 (KCC)",
@@ -1128,6 +1131,7 @@ export const KIP_SUBMISSION_DOCS: KIPDocument[] = [
     attachment: "붙임 3",
     title: "제출서류 및 평가양식",
     format: "HWP",
+    fileName: "kip_attach_3.hwp",
     description: "제출 서류 목록, 평가표 양식, 서약서 양식, 신청서 양식 (별지 제12호) 포함.",
     assignee: "정창기 (BW)",
     supporter: "최은진 (BWC)",
@@ -1145,6 +1149,7 @@ export const KIP_SUBMISSION_DOCS: KIPDocument[] = [
     attachment: "붙임 4",
     title: "우수상용품 시범사용 제도 신청제품정보 제출양식",
     format: "XLSX",
+    fileName: "kip_attach_4.xlsx",
     description: "엑셀 양식. 54개 컬럼: 기업정보(20여 항목) + 인증현황(11항목) + 제품정보(15항목).",
     assignee: "최은진 (BWC)",
     supporter: "정창기 (BW) + 이정호 (BIT)",
@@ -1163,6 +1168,7 @@ export const KIP_SUBMISSION_DOCS: KIPDocument[] = [
     attachment: "붙임 5 (별첨 1)",
     title: "제품설명책자 (디렉토리북) 작성양식",
     format: "HWP",
+    fileName: "kip_attach_5.hwp",
     description: "제품 소개 책자 양식. 회사명, 제품명, 주소, 연락처, 제품설명, 사진 포함.",
     assignee: "신용수 (BEX/마케팅)",
     supporter: "이정호 (BIT) + 김태형 (BIT)",
@@ -1182,6 +1188,7 @@ export const KIP_SUBMISSION_DOCS: KIPDocument[] = [
     attachment: "붙임 6 (별첨 2)",
     title: "품질관리계획서 서식",
     format: "HWP",
+    fileName: "kip_attach_6.hwp",
     description: "생산 공정, 품질관리 체계, 검사 절차, 불량 대응 계획 등 기술.",
     assignee: "이정호 (BIT)",
     supporter: "김태형 (BIT) + 김승만 (PM)",
