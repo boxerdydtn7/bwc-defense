@@ -743,12 +743,12 @@ export interface Competitor {
 }
 
 export const KCLP_COMPETITORS: Competitor[] = [
-  { name: "그린바이오캠", product: "강중유 (세정·윤활·방청)", status: "현재 군 공급", note: "조달 낙찰가 1,760~5,920원/CN" },
-  { name: "한국하우톤", product: "PL-SP 용제 희석형 방청유 (강중유)", status: "현재 군 사용 중", note: "LSA/PL-SP 25,575원/CN. K-CLP 대비 성능 열위 (염수분무 4h)" },
-  { name: "고려케미칼", product: "강중유", status: "현재 군 공급", note: "조달 낙찰가 5,314~5,420원/CN" },
-  { name: "동진케미칼", product: "강중유", status: "현재 군 공급", note: "광주 소재, 매출 35억" },
-  { name: "대성화학", product: "강중유", status: "현재 군 공급", note: "광주 소재, 매출 35억" },
-  { name: "미유테크", product: "강중유/윤활유", status: "현재 군 공급", note: "경기 안산, 매출 180억" },
+  { name: "한국하우톤", product: "PL-SP 용제 희석형 방청유 (강중유)", status: "현재 군 사용 중", note: "매출 2,121억 · 227명 · 25,575원/CN · Quaker Houghton JV · 염수분무 4h (K-CLP 60h)" },
+  { name: "미유테크", product: "강중유/윤활유/세정제", status: "현재 군 공급", note: "매출 193억 · 17~25명 · 안산 반월 · KS/이노비즈/EcoVadis 금상" },
+  { name: "고려케미칼", product: "강중유/세정제", status: "현재 군 공급", note: "매출 미공개 · 8~11명 · 천안 · 낙찰가 5,314~5,420원/CN" },
+  { name: "동진케미칼", product: "강중유/방청유/에어로졸", status: "현재 군 공급", note: "매출 33억 · 2명 · 광주 · 도매/유통 중심" },
+  { name: "대성화학", product: "화학제품 (강중유 포함)", status: "현재 군 공급", note: "매출 ~35억 추정 · 광주/장성 2공장 · 공개정보 제한적" },
+  { name: "그린바이오캠", product: "강중유 (세정·윤활·방청)", status: "현재 군 공급", note: "매출 미확인 · 기업정보 없음 · 낙찰가 1,760~5,920원/CN" },
 ];
 
 // ─────────────────────────────────────────
@@ -1249,6 +1249,230 @@ export const REFERENCE_LINKS: ReferenceLink[] = [
     description: "한국조달연구원 물자분야 내선 603",
   },
 ];
+
+// ─────────────────────────────────────────
+// 강중유 공급사 현황 (조달 실적 기반)
+// ─────────────────────────────────────────
+export interface CLPSupplier {
+  name: string;
+  totalRevenue: string;        // 전체 매출
+  employees: string;
+  location: string;
+  established: string;
+  products: string;
+  militaryNote: string;
+  strength: string;
+  weakness: string;
+  source?: string;
+}
+
+export const CLP_SUPPLIERS: CLPSupplier[] = [
+  {
+    name: "한국하우톤",
+    totalRevenue: "2,121억원 (2024)",
+    employees: "227~259명",
+    location: "서울 동작구 (본사) / 울산 온산공장",
+    established: "1973년 (Quaker Houghton JV)",
+    products: "PL-SP (강중유), 텍틸(방청유), 산업용 윤활유·그리스 전 라인",
+    militaryNote: "현재 군 PL-SP 공급. 조달단가 25,575원/CN. K-CLP 대비 염수분무 4h (K-CLP 60h).",
+    strength: "글로벌 네트워크, 대규모 생산능력, 군 납품 실적",
+    weakness: "고가(CN당 25,575원), 성능 K-CLP 대비 열위, 다국적 JV로 가격 경직",
+    source: "saramin.co.kr / nicebizinfo.com",
+  },
+  {
+    name: "미유테크",
+    totalRevenue: "193억원 (2022)",
+    employees: "17~25명",
+    location: "경기 안산 반월공단 / 오창 2공장",
+    established: "1998년",
+    products: "산업용 윤활유, 탄화수소계 세정제, 계면활성제, 절삭유",
+    militaryNote: "KS인증(기계유·유압유·윤활유), 이노비즈, EcoVadis 금상. 강중유 입찰 참여 추정.",
+    strength: "KS·NET·이노비즈 인증 보유, 자체 제조, 중견 규모",
+    weakness: "K-CLP 대비 성능 데이터 미확인, CLP 전용 라인업 불분명",
+    source: "bizno.net / jobkorea.co.kr",
+  },
+  {
+    name: "고려케미칼",
+    totalRevenue: "미공개",
+    employees: "8~11명",
+    location: "충남 천안시",
+    established: "1997년",
+    products: "세제류, 세정제",
+    militaryNote: "조달 낙찰가 5,314~5,420원/CN. 저가 경쟁 전략.",
+    strength: "저가 포지셔닝, 조달 실적",
+    weakness: "소규모(8~11명), 기술력 한계, 품질 차별화 어려움",
+    source: "bizno.net / wanted.co.kr",
+  },
+  {
+    name: "동진케미칼",
+    totalRevenue: "33억원 (2024)",
+    employees: "2명",
+    location: "광주 동구",
+    established: "2004년",
+    products: "윤활유, 방청유, 에어로졸, 접착제, 실리콘",
+    militaryNote: "광주 기반 도매/유통 업체. 조달 입찰 참여 추정.",
+    strength: "소규모 유연성, 광주 지역 기반",
+    weakness: "직원 2명, 제조보다 유통 중심, 기술개발 역량 한계",
+    source: "jobkorea.co.kr / saramin.co.kr",
+  },
+  {
+    name: "대성화학",
+    totalRevenue: "~35억원 (추정)",
+    employees: "미확인",
+    location: "광주 광산구 하남산단 / 전남 장성",
+    established: "미확인",
+    products: "화학제품 도매 (상세 불명)",
+    militaryNote: "광주 기반. 웹사이트 SSL 만료 상태. 정보 제한적.",
+    strength: "2공장 보유 (장성 나노산단)",
+    weakness: "공개정보 매우 제한적, 온라인 존재감 없음",
+    source: "ds7988.co.kr (SSL 만료)",
+  },
+  {
+    name: "그린바이오캠",
+    totalRevenue: "미확인",
+    employees: "미확인",
+    location: "미확인",
+    established: "미확인",
+    products: "강중유 (세정·윤활·방청)",
+    militaryNote: "조달 낙찰가 1,760~5,920원/CN. 공개 기업정보 없음.",
+    strength: "최저가 입찰 실적",
+    weakness: "기업 정보 전무 — 신뢰도·지속성 의문",
+  },
+];
+
+// ─────────────────────────────────────────
+// 군 강중유 조달 실적
+// ─────────────────────────────────────────
+export interface ProcurementRecord {
+  year: number;
+  title: string;
+  budget: number;          // 원
+  quantity?: number;        // 개/CN
+  agency: string;
+  method: string;
+  bidNumber?: string;
+  note?: string;
+  source?: string;
+}
+
+export const PROCUREMENT_HISTORY: ProcurementRecord[] = [
+  {
+    year: 2025,
+    title: "2025년 군 강중유 조달 (통합)",
+    budget: 276_524_400,
+    quantity: 42872,
+    agency: "조달청 → 육군군수사·공군군수사·해병대사",
+    method: "일반경쟁 적격심사",
+    bidNumber: "R25BK00861177",
+    note: "1차 공고(R25BK00838636) 취소 후 재공고. 납품 60일 이내.",
+    source: "bidpro.co.kr / kjebi.com",
+  },
+  {
+    year: 2023,
+    title: "23년 강중유 조달 (통합)",
+    budget: 140_000_000,
+    agency: "조달청",
+    method: "일반경쟁",
+    bidNumber: "20230502918",
+    source: "kjebi.com",
+  },
+  {
+    year: 2023,
+    title: "총강용 세척제(강중유) 제조 (해병대)",
+    budget: 36_960_000,
+    agency: "제3170부대 (해병대)",
+    method: "수의계약",
+    note: "해병대 별도 발주. 윤활유·그리스 제조업(19221) 등록 필수.",
+    source: "jungi.net",
+  },
+];
+
+// ─────────────────────────────────────────
+// 매출 시나리오 시뮬레이션
+// ─────────────────────────────────────────
+export interface RevenueScenario {
+  name: string;
+  color: string;
+  description: string;
+  years: { year: string; clp: number; rust: number; clean: number; defense: number; total: number }[];
+}
+
+// 단위: 만원
+export const REVENUE_SCENARIOS: RevenueScenario[] = [
+  {
+    name: "보수적",
+    color: "#94A3B8",
+    description: "강중유 시장만 진입, 시범부대 5곳, 낮은 확산율",
+    years: [
+      { year: "시범(Y1)", clp: 350,   rust: 0,    clean: 0,    defense: 0,    total: 350 },
+      { year: "초기(Y2)", clp: 3000,  rust: 500,  clean: 0,    defense: 0,    total: 3500 },
+      { year: "확산(Y3)", clp: 7000,  rust: 2000, clean: 1000, defense: 0,    total: 10000 },
+      { year: "안정(Y4)", clp: 10000, rust: 3000, clean: 2000, defense: 500,  total: 15500 },
+      { year: "성숙(Y5)", clp: 12000, rust: 5000, clean: 3000, defense: 1000, total: 21000 },
+    ],
+  },
+  {
+    name: "중립",
+    color: "#3B82F6",
+    description: "강중유 + 방청유 시장 진입, 시범부대 15곳, 방산업체 납품 시작",
+    years: [
+      { year: "시범(Y1)", clp: 500,   rust: 0,    clean: 0,     defense: 0,    total: 500 },
+      { year: "초기(Y2)", clp: 5000,  rust: 2000, clean: 500,   defense: 0,    total: 7500 },
+      { year: "확산(Y3)", clp: 12000, rust: 5000, clean: 3000,  defense: 2000, total: 22000 },
+      { year: "안정(Y4)", clp: 20000, rust: 8000, clean: 5000,  defense: 5000, total: 38000 },
+      { year: "성숙(Y5)", clp: 25000, rust: 12000,clean: 8000,  defense: 8000, total: 53000 },
+    ],
+  },
+  {
+    name: "낙관",
+    color: "#10B981",
+    description: "전 카테고리 진입, 시범부대 30곳+, 체계업체 MOU, 수출 포함",
+    years: [
+      { year: "시범(Y1)", clp: 1000,  rust: 500,  clean: 0,     defense: 0,     total: 1500 },
+      { year: "초기(Y2)", clp: 8000,  rust: 5000, clean: 2000,  defense: 3000,  total: 18000 },
+      { year: "확산(Y3)", clp: 20000, rust: 10000,clean: 8000,  defense: 7000,  total: 45000 },
+      { year: "안정(Y4)", clp: 35000, rust: 15000,clean: 12000, defense: 15000, total: 77000 },
+      { year: "성숙(Y5)", clp: 50000, rust: 20000,clean: 15000, defense: 25000, total: 110000 },
+    ],
+  },
+];
+
+// 매출 산정 근거
+export const REVENUE_ASSUMPTIONS = {
+  clpMarket: {
+    label: "강중유(CLP) 시장",
+    annualProcurement: "2.77억원 (2025 조달청 기준)",
+    annualQuantity: "42,872 CN (2025 통합발주)",
+    unitPrice: "5,314~6,450원/CN (조달단가)",
+    kclpTargetPrice: "7,000~8,000원/CN (프리미엄)",
+    suppliers: 6,
+    note: "해병대 별도 발주(~3,700만) 등 합산 시 전군 ~5억 추정",
+  },
+  rustMarket: {
+    label: "방청유 시장 (K-CLP 확장)",
+    estimated: "10~15억원/년",
+    note: "K-CLP은 방청 기능 포함 → 기존 방청유 일부 대체 가능. BW RUSTOP 시리즈 연계.",
+  },
+  cleanMarket: {
+    label: "세정유 시장 (K-CLP 확장)",
+    estimated: "15~20억원/년",
+    note: "정비창 세정유 수요 흡수. BW CLEAN 시리즈 동반 진입.",
+  },
+  defenseOem: {
+    label: "방산업체 OEM/MRO",
+    estimated: "20~50억원/년",
+    note: "체계업체 가공라인 절삭유·방청유 납품 (T3 트랙). 한화·로템 등.",
+  },
+  bottomUp: {
+    label: "Bottom-up 계산",
+    formula: "대상부대 수 × 부대당 연간 소비 × 단가",
+    example: "100부대 × 150CN × 7,000원 = 1.05억원 (강중유만)",
+    armyUnits: "~50개 (사단급 정비대대)",
+    navyShips: "~150척",
+    airForceWings: "~10개 비행단",
+    defenseCompanies: "84개사",
+  },
+};
 
 // ─────────────────────────────────────────
 // 헬퍼

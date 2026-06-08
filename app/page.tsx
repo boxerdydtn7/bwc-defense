@@ -15,6 +15,7 @@ import {
   MILITARY_REPLACEMENTS, RR_DETAILS,
   KCLP_PROCESS_PHASES, KCLP_SCHEDULE_HISTORY, KCLP_ACTION_ITEMS, KCLP_DOC_CHECKLIST,
   KIP_SUBMISSION_DOCS, REFERENCE_LINKS,
+  CLP_SUPPLIERS, PROCUREMENT_HISTORY, REVENUE_SCENARIOS, REVENUE_ASSUMPTIONS,
   getProjectsByCategory, getUpcomingMilestones, getOverdueMilestones,
 } from "@/data/defense";
 
@@ -432,6 +433,136 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
               <Legend wrapperStyle={{ fontSize: 11 }} />
             </PieChart>
           </ResponsiveContainer>
+        </ChartCard>
+      </div>
+
+      {/* 매출 시나리오 시뮬레이션 */}
+      <ChartCard title="매출 시나리오 시뮬레이션" subtitle="K-CLP 군 채택 후 5개년 매출 추정 (단위: 만원)">
+        {/* 시나리오 차트 */}
+        <ResponsiveContainer width="100%" height={280}>
+          <BarChart data={REVENUE_SCENARIOS[1].years} margin={{ left: 10, right: 10 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke={GRID_STROKE} vertical={false} />
+            <XAxis dataKey="year" {...AXIS_STYLE} />
+            <YAxis {...AXIS_STYLE} tickFormatter={(v) => `${(v / 10000).toFixed(1)}억`} />
+            <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v, name) => {
+              const labels: Record<string, string> = { clp: "강중유(CLP)", rust: "방청유", clean: "세정유", defense: "방산OEM" };
+              const n = Number(v) || 0;
+              return [`${fmt(n * 10000)}원 (${(n / 10000).toFixed(1)}억)`, labels[String(name)] || String(name)];
+            }} />
+            <Legend wrapperStyle={{ fontSize: 11 }} formatter={(v) => {
+              const labels: Record<string, string> = { clp: "강중유(CLP)", rust: "방청유", clean: "세정유", defense: "방산OEM" };
+              return labels[v] || v;
+            }} />
+            <Bar dataKey="clp" stackId="a" fill="#556B2F" radius={[0, 0, 0, 0]} />
+            <Bar dataKey="rust" stackId="a" fill="#8B9A6B" />
+            <Bar dataKey="clean" stackId="a" fill="#3B82F6" />
+            <Bar dataKey="defense" stackId="a" fill="#F59E0B" radius={[4, 4, 0, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+
+        {/* 3개 시나리오 비교 */}
+        <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+          {REVENUE_SCENARIOS.map((s) => (
+            <div key={s.name} className="border border-slate-200 rounded-xl p-4 hover:shadow-sm transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: s.color }} />
+                <span className="text-[14px] font-bold text-slate-900">{s.name} 시나리오</span>
+              </div>
+              <p className="text-[11px] text-slate-500 mb-3">{s.description}</p>
+              <div className="space-y-1.5">
+                {s.years.map((y) => (
+                  <div key={y.year} className="flex items-center gap-2 text-[12px]">
+                    <span className="text-slate-500 w-16 shrink-0">{y.year}</span>
+                    <div className="flex-1 bg-slate-100 rounded-full h-3 overflow-hidden">
+                      <div className="h-full rounded-full transition-all" style={{
+                        width: `${Math.min((y.total / (s.name === "낙관" ? 1100 : s.name === "중립" ? 550 : 220)) * 100, 100)}%`,
+                        backgroundColor: s.color,
+                      }} />
+                    </div>
+                    <span className="font-semibold text-slate-800 w-14 text-right shrink-0">{(y.total / 10000).toFixed(1)}억</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* 산정 근거 */}
+        <details className="mt-4 group">
+          <summary className="cursor-pointer text-[12px] font-semibold text-slate-600 hover:text-slate-800 flex items-center gap-2">
+            <span className="group-open:rotate-90 transition-transform text-slate-400">▶</span>
+            매출 산정 근거 (조달 실적 + Bottom-up)
+          </summary>
+          <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {Object.entries(REVENUE_ASSUMPTIONS).map(([key, val]) => (
+              <div key={key} className="border border-slate-100 rounded-lg p-3 text-[11px]">
+                <div className="font-semibold text-slate-800 mb-1.5">{val.label}</div>
+                {Object.entries(val).filter(([k]) => k !== "label").map(([k, v]) => (
+                  <div key={k} className="flex gap-1 text-slate-500 mb-0.5">
+                    <span className="text-slate-400 shrink-0">·</span>
+                    <span><span className="text-slate-600 font-medium">{k}:</span> {String(v)}</span>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </details>
+      </ChartCard>
+
+      {/* 조달 실적 + 공급사 분석 */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {/* 조달 실적 */}
+        <ChartCard title="군 강중유 조달 실적" subtitle="나라장터 + D2B 공개 데이터">
+          <div className="space-y-3">
+            {PROCUREMENT_HISTORY.map((p, i) => (
+              <div key={i} className="border border-slate-200 rounded-xl p-4">
+                <div className="flex items-center gap-2 flex-wrap mb-2">
+                  <Badge label={String(p.year)} color="bg-blue-100 text-blue-700" />
+                  <span className="text-[13px] font-semibold text-slate-900">{p.title}</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-[11px]">
+                  <div><span className="text-slate-400">예산:</span> <span className="font-bold text-emerald-700">{fmt(p.budget)}원</span></div>
+                  {p.quantity && <div><span className="text-slate-400">수량:</span> <span className="font-semibold">{fmt(p.quantity)} CN</span></div>}
+                  <div><span className="text-slate-400">발주처:</span> <span className="text-slate-600">{p.agency}</span></div>
+                  <div><span className="text-slate-400">방식:</span> <span className="text-slate-600">{p.method}</span></div>
+                </div>
+                {p.note && <p className="mt-2 text-[10px] text-slate-400">{p.note}</p>}
+              </div>
+            ))}
+            <p className="text-[10px] text-slate-400">출처: bidpro.co.kr, kjebi.com, jungi.net · 낙찰업체 정보는 나라장터 로그인 필요</p>
+          </div>
+        </ChartCard>
+
+        {/* 공급사 분석 */}
+        <ChartCard title="현 강중유 공급사 분석" subtitle={`${CLP_SUPPLIERS.length}개사 상세 (매출·규모·강약점)`}>
+          <div className="space-y-2">
+            {CLP_SUPPLIERS.map((s) => (
+              <details key={s.name} className="border border-slate-200 rounded-xl overflow-hidden group">
+                <summary className="px-4 py-3 cursor-pointer hover:bg-slate-50 transition-colors flex items-center gap-3">
+                  <span className="text-[13px] font-bold text-slate-900">{s.name}</span>
+                  <Badge label={s.totalRevenue} color="bg-emerald-50 text-emerald-700" />
+                  <Badge label={s.employees} color="bg-slate-100 text-slate-600" />
+                  <span className="ml-auto text-slate-400 group-open:rotate-90 transition-transform text-[12px]">▶</span>
+                </summary>
+                <div className="px-4 pb-3 border-t border-slate-100 pt-2 text-[11px] space-y-1.5">
+                  <div><span className="text-slate-400">소재지:</span> {s.location}</div>
+                  <div><span className="text-slate-400">설립:</span> {s.established}</div>
+                  <div><span className="text-slate-400">제품:</span> {s.products}</div>
+                  <div><span className="text-slate-400">군 관련:</span> <span className="text-blue-700">{s.militaryNote}</span></div>
+                  <div className="grid grid-cols-2 gap-2 mt-2">
+                    <div className="bg-emerald-50 rounded-lg p-2">
+                      <div className="text-[10px] font-semibold text-emerald-700 mb-0.5">강점</div>
+                      <div className="text-slate-600">{s.strength}</div>
+                    </div>
+                    <div className="bg-red-50 rounded-lg p-2">
+                      <div className="text-[10px] font-semibold text-red-700 mb-0.5">약점</div>
+                      <div className="text-slate-600">{s.weakness}</div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            ))}
+          </div>
         </ChartCard>
       </div>
 
