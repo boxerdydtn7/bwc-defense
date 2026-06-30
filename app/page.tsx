@@ -18,6 +18,7 @@ import {
   CLP_SUPPLIERS, PROCUREMENT_HISTORY, REVENUE_SCENARIOS, REVENUE_ASSUMPTIONS,
   getProjectsByCategory, getUpcomingMilestones, getOverdueMilestones,
 } from "@/data/defense";
+import NoticeAlerts from "./NoticeAlerts";
 
 const TAB_ORDER: Category[] = ["k_clp", "decontaminant", "defense_venture", "etc_projects"];
 const PIE_COLORS = ["#10B981", "#8B5CF6", "#3B82F6", "#F59E0B", "#EF4444", "#EC4899", "#06B6D4", "#6366F1", "#14B8A6"];
@@ -109,15 +110,18 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
 
   return (
     <>
+      {/* 🔔 입찰공고 자동 알람 (나라장터) — 대시보드 최상단 */}
+      <NoticeAlerts />
+
       {/* 🚨 긴급 액션플랜 — 우수상용품 시범사용 */}
       <div className="border-2 border-red-300 rounded-2xl bg-gradient-to-br from-red-50 via-white to-amber-50 p-5 sm:p-6 shadow-sm">
         <div className="flex items-center gap-3 mb-4">
           <span className="w-10 h-10 rounded-xl bg-red-500 flex items-center justify-center text-white text-lg font-bold shadow-sm animate-pulse">!</span>
           <div>
-            <h2 className="text-[17px] font-bold text-red-800">K-CLP 우수상용품 시범사용 — 접수 마감 7/31 확정</h2>
+            <h2 className="text-[17px] font-bold text-red-800">K-CLP 우수상용품 시범사용 — 접수 마감 7/2 15:00 확정</h2>
             <p className="text-[12px] text-red-600 mt-0.5">
-              하반기 접수 마감: <span className="font-bold text-red-700">2026년 7월 31일 (확정)</span> · 공고일: 2026-06-04 ·
-              <span className="font-bold"> D-{Math.max(0, Math.ceil((new Date("2026-07-31").getTime() - Date.now()) / 86400000))}</span>
+              접수 마감: <span className="font-bold text-red-700">2026년 7월 2일(목) 15:00 (공고문 HWP 원문 확인)</span> · 공고일: 2026-06-04 ·
+              <span className="font-bold"> D-{Math.max(0, Math.ceil((new Date("2026-07-02T15:00:00+09:00").getTime() - Date.now()) / 86400000))}</span>
             </p>
           </div>
         </div>
@@ -128,8 +132,8 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 text-[12px]">
             <div className="bg-white rounded-lg p-3 border border-emerald-100">
               <div className="text-emerald-600 font-semibold mb-1">접수 마감</div>
-              <div className="text-slate-900 font-bold text-[14px]">7월 31일</div>
-              <div className="text-slate-500 text-[10px]">KIP 공고 확인 완료</div>
+              <div className="text-slate-900 font-bold text-[14px]">7월 2일 15:00</div>
+              <div className="text-slate-500 text-[10px]">공고문 HWP 원문 확인</div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-emerald-100">
               <div className="text-emerald-600 font-semibold mb-1">시험성적서 완료</div>
@@ -155,7 +159,7 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[12px]">
             <div className="bg-white rounded-lg p-3 border border-amber-100">
               <div className="text-amber-600 font-semibold mb-1">시험성적서 vs 마감일</div>
-              <div className="text-slate-700">시험성적서 7월말 완료 vs 접수 7/31 → <span className="font-bold text-amber-600">동시 완료 필요</span></div>
+              <div className="text-slate-700">시험성적서(저온유동성·염수분무) 미완 vs 접수 7/2 15:00 → <span className="font-bold text-red-600">시간 부족 — 김태형 즉시 확인 필요</span></div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-amber-100">
               <div className="text-amber-600 font-semibold mb-1">서류 6종 준비</div>
