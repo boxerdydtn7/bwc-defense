@@ -1,7 +1,48 @@
 {
-  "updatedAt": "",
+  "updatedAt": "2026-06-30T22:15:42.291Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
-  "keywords": ["윤활유", "윤활제", "그리스", "세정", "세척", "방청", "방청유", "유압유", "작동유", "절삭유", "세정유", "제독", "부동액", "접점부활", "침투윤활", "WD-40"],
-  "count": 0,
-  "items": []
+  "keywords": [
+    "윤활유",
+    "윤활제",
+    "그리스",
+    "세정",
+    "세척",
+    "방청",
+    "방청유",
+    "유압유",
+    "작동유",
+    "절삭유",
+    "세정유",
+    "제독",
+    "부동액",
+    "접점부활",
+    "침투윤활",
+    "WD-40",
+    "WD40"
+  ],
+  "count": 2,
+  "items": [
+    {
+      "id": "R26BK01594377-000",
+      "title": "윤축세척기 등 3대 제작구매설치(세출+채무)",
+      "agency": "서울교통공사",
+      "demand": "서울교통공사",
+      "posted": "2026-06-22 11:18:16",
+      "deadline": "2026-06-23 12:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01594377&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01593472-000",
+      "title": "2026년 지방청 전화교환기 통합 교체사업",
+      "agency": "조달청",
+      "demand": "병무청",
+      "posted": "2026-06-22 10:09:24",
+      "deadline": "2026-08-04 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01593472&bidPbancOrd=000"
+    }
+  ]
 }
