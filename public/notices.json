@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T22:17:26.107Z",
+  "updatedAt": "2026-07-02T22:06:16.432Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -23,26 +23,26 @@
   "count": 2,
   "items": [
     {
-      "id": "R26BK01594377-000",
-      "title": "윤축세척기 등 3대 제작구매설치(세출+채무)",
-      "agency": "서울교통공사",
-      "demand": "서울교통공사",
-      "posted": "2026-06-22 11:18:16",
-      "deadline": "2026-06-23 12:00:00",
+      "id": "R26BK01596745-000",
+      "title": "(재공고) 2026년도 혈액장비(플레이트세척기) 공동구매(2차 신규공고)",
+      "agency": "대한적십자사 혈액관리본부",
+      "demand": "대한적십자사 혈액관리본부",
+      "posted": "2026-06-23 10:15:32",
+      "deadline": "2026-07-01 11:00:00",
       "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01594377&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01596745&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01593472-000",
-      "title": "2026년 지방청 전화교환기 통합 교체사업",
-      "agency": "조달청",
-      "demand": "병무청",
-      "posted": "2026-06-22 10:09:24",
-      "deadline": "2026-08-04 10:00:00",
-      "category": "물품",
+      "id": "R26BK01596554-000",
+      "title": "안전성 확보 기반 과세정보의 활용 확대 방안 연구",
+      "agency": "국세청",
+      "demand": "국세청",
+      "posted": "2026-06-23 10:02:33",
+      "deadline": "2026-07-07 10:00:00",
+      "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01593472&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01596554&bidPbancOrd=000"
     }
   ]
 }
