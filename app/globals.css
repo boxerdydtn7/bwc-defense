@@ -17,3 +17,29 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* ===== 회의록 탭 (스코프: mn-) — 브랜드색 #556B2F ===== */
+.mn-wrap { max-width: 1100px; margin: 0 auto; padding: 8px 0; }
+.mn-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.mn-head h2 { margin: 0; font-size: 1.3rem; }
+.mn-selector { display: flex; gap: 8px; flex-wrap: wrap; }
+.mn-sel-btn { padding: 6px 14px; border-radius: 20px; border: 1.5px solid #556B2F; background: #fff; color: #556B2F; font-weight: 700; cursor: pointer; font-size: .9rem; transition: all .15s; }
+.mn-sel-btn.active { background: #556B2F; color: #fff; }
+.mn-card { background: #fff; border: 1px solid #e2e2d8; border-radius: 12px; padding: 20px; margin-bottom: 18px; box-shadow: 0 1px 4px rgba(0,0,0,.05); }
+.mn-title { font-size: 1.15rem; font-weight: 800; margin: 0 0 4px; }
+.mn-meta { font-size: .85rem; color: #666; margin-bottom: 14px; line-height: 1.7; }
+.mn-meta b { color: #333; }
+.mn-sec { margin-top: 18px; }
+.mn-sec h3 { font-size: 1rem; margin: 0 0 10px; padding-left: 10px; border-left: 4px solid #556B2F; }
+.mn-tblwrap { overflow-x: auto; }
+.mn-tbl { width: 100%; border-collapse: collapse; font-size: .83rem; min-width: 640px; }
+.mn-tbl th { background: #f0f2e8; color: #33402a; padding: 8px 10px; text-align: left; white-space: nowrap; border-bottom: 2px solid #d8dcc8; }
+.mn-tbl td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.55; }
+.mn-badge { display: inline-block; padding: 2px 9px; border-radius: 10px; font-size: .75rem; font-weight: 700; white-space: nowrap; }
+.mn-b-done { background: #e3f2e3; color: #1b7a2f; }
+.mn-b-doing { background: #fff3d6; color: #a06b00; }
+.mn-b-todo { background: #eee; color: #666; }
+.mn-b-must { background: #fde3e3; color: #b02a2a; }
+.mn-b-check { background: #e5ecf7; color: #2a5aa0; }
+.mn-collapse summary { cursor: pointer; font-weight: 700; font-size: .95rem; padding: 10px 0; color: #556B2F; }
+@media (max-width: 640px) { .mn-tbl { font-size: .78rem; } }

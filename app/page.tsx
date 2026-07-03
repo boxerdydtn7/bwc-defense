@@ -11,7 +11,7 @@ import {
   type Category,
   CATEGORIES, STATUS_MAP, TF_MEMBERS, TRACKS, PROJECTS, MILESTONES,
   KCLP_PERFORMANCE, KCLP_COMPETITORS, ASSET_FLOWS, MARKET_DATA,
-  RESEARCH_REFS, MEETING_NOTES, MILITARY_LOGISTICS,
+  RESEARCH_REFS, MILITARY_LOGISTICS,
   MILITARY_REPLACEMENTS, RR_DETAILS,
   KCLP_PROCESS_PHASES, KCLP_SCHEDULE_HISTORY, KCLP_ACTION_ITEMS, KCLP_DOC_CHECKLIST,
   KIP_SUBMISSION_DOCS, REFERENCE_LINKS,
@@ -19,6 +19,7 @@ import {
   getProjectsByCategory, getUpcomingMilestones, getOverdueMilestones,
 } from "@/data/defense";
 import NoticeAlerts from "./NoticeAlerts";
+import MeetingMinutes from "./MeetingMinutes";
 
 const TAB_ORDER: Category[] = ["k_clp", "decontaminant", "defense_venture", "etc_projects"];
 const PIE_COLORS = ["#10B981", "#8B5CF6", "#3B82F6", "#F59E0B", "#EF4444", "#EC4899", "#06B6D4", "#6366F1", "#14B8A6"];
@@ -36,7 +37,7 @@ function ProgressBar({ value, color = "from-[#556B2F] to-[#8B9A6B]" }: { value: 
 }
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<Category | "overview">("overview");
+  const [activeTab, setActiveTab] = useState<Category | "overview" | "minutes">("overview");
 
   const upcoming = useMemo(() => getUpcomingMilestones(6), []);
   const overdue = useMemo(() => getOverdueMilestones(), []);
@@ -73,6 +74,12 @@ export default function Home() {
         >
           전체 현황
         </button>
+        <button
+          onClick={() => setActiveTab("minutes")}
+          className={`px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${activeTab === "minutes" ? "bg-[#556B2F] text-white shadow-sm" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}`}
+        >
+          📋 회의록
+        </button>
         {TAB_ORDER.map((cat) => (
           <button
             key={cat}
@@ -84,7 +91,13 @@ export default function Home() {
         ))}
       </div>
 
-      {activeTab === "overview" ? <OverviewSection upcoming={upcoming} overdue={overdue} totalProjects={totalProjects} inProgressCount={inProgressCount} doneMilestones={doneMilestones} categoryProgress={categoryProgress} defenseFieldPie={defenseFieldPie} /> : <CategorySection category={activeTab} />}
+      {activeTab === "overview" ? (
+        <OverviewSection upcoming={upcoming} overdue={overdue} totalProjects={totalProjects} inProgressCount={inProgressCount} doneMilestones={doneMilestones} categoryProgress={categoryProgress} defenseFieldPie={defenseFieldPie} />
+      ) : activeTab === "minutes" ? (
+        <MeetingMinutes />
+      ) : (
+        <CategorySection category={activeTab} />
+      )}
 
       <div className="text-center py-6 text-[11px] text-slate-400">
         범우연합 방산TF · BWC Defense Task Force Dashboard v2.0
@@ -795,43 +808,6 @@ function OverviewSection({ upcoming, overdue, totalProjects, inProgressCount, do
         </div>
       </ChartCard>
 
-      {/* 회의록 */}
-      {MEETING_NOTES.map((mtg) => (
-        <ChartCard key={mtg.id} title={`회의록: ${mtg.title}`} subtitle={`${mtg.date} · 기록: ${mtg.recorder} · 참석: ${mtg.attendees.join(", ")}`}>
-          <div className="space-y-4">
-            {mtg.agendas.map((ag, i) => (
-              <div key={i} className="border border-slate-100 rounded-xl p-4">
-                <h4 className="text-[13px] font-semibold text-slate-800 mb-2">{i + 1}. {ag.topic}</h4>
-                <ul className="space-y-1">
-                  {ag.details.map((d, j) => (
-                    <li key={j} className="text-[12px] text-slate-600 flex gap-2">
-                      <span className="text-slate-300 shrink-0">•</span>
-                      <span>{d}</span>
-                    </li>
-                  ))}
-                </ul>
-                {ag.notes && <p className="mt-2 text-[11px] text-amber-600 bg-amber-50 rounded px-2 py-1">비고: {ag.notes}</p>}
-              </div>
-            ))}
-            {mtg.actionItems.length > 0 && (
-              <div className="border-t border-slate-200 pt-3">
-                <h4 className="text-[13px] font-semibold text-slate-800 mb-2">Action Items</h4>
-                <div className="space-y-1.5">
-                  {mtg.actionItems.map((ai, i) => (
-                    <div key={i} className="flex items-center gap-2 text-[12px]">
-                      <span className={`w-4 h-4 rounded border flex items-center justify-center shrink-0 ${ai.done ? "bg-emerald-500 border-emerald-500 text-white" : "border-slate-300"}`}>
-                        {ai.done && "✓"}
-                      </span>
-                      <span className={`${ai.done ? "line-through text-slate-400" : "text-slate-700"}`}>{ai.task}</span>
-                      <span className="ml-auto shrink-0 text-[11px] text-slate-400">{ai.assignee} · {ai.deadline}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        </ChartCard>
-      ))}
     </>
   );
 }
