@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T22:06:16.432Z",
+  "updatedAt": "2026-07-03T22:04:45.016Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -23,26 +23,26 @@
   "count": 2,
   "items": [
     {
-      "id": "R26BK01596745-000",
-      "title": "(재공고) 2026년도 혈액장비(플레이트세척기) 공동구매(2차 신규공고)",
-      "agency": "대한적십자사 혈액관리본부",
-      "demand": "대한적십자사 혈액관리본부",
-      "posted": "2026-06-23 10:15:32",
-      "deadline": "2026-07-01 11:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01596745&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01596554-000",
-      "title": "안전성 확보 기반 과세정보의 활용 확대 방안 연구",
-      "agency": "국세청",
-      "demand": "국세청",
-      "posted": "2026-06-23 10:02:33",
-      "deadline": "2026-07-07 10:00:00",
+      "id": "R26BK01597697-000",
+      "title": "산이배수갑문 및 통선문 유압작동유 교체정비 용역",
+      "agency": "한국농어촌공사 영산강사업단",
+      "demand": "한국농어촌공사 영산강사업단",
+      "posted": "2026-06-24 10:09:27",
+      "deadline": "2026-06-25 10:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01596554&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01597697&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01599267-000",
+      "title": "섬유디스크필터 분사 세척펌프(모터) 및 재이용설비 활성탄 펌프 수리",
+      "agency": "지에스건설주식회사",
+      "demand": "지에스건설주식회사",
+      "posted": "2026-06-24 09:48:55",
+      "deadline": "2026-06-29 11:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01599267&bidPbancOrd=000"
     }
   ]
 }
