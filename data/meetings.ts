@@ -35,9 +35,9 @@ export const MEETINGS: MnMeeting[] = [
     label: "2차 (7/3)",
     title: "아이템별 1차 조사결과 취합 & 육군본부 방문 준비",
     date: "2026년 7월 3일 (목)",
-    place: "범우연합 본사",
+    place: "포항영업소",
     recorder: "신용수 (BEX)",
-    attendees: "김제관(COO), 김승만(BWC·PM), 최은진(BWC), 신용수(BEX), 배성재(KCC), 정창기(BW), 이종률(BWC)",
+    attendees: "김승만(BWC·PM), 신용수(BEX), 최은진(BWC), 배성재(KCC)",
     topic: "1차 아이템별 조사결과 취합 · 미로유통 군 유통채널 협력 · 계룡대 육군본부(군수사) 방문 계획 확정 · 발표 PPT 제작 착수",
     next: "2026년 7월 21일 (화) 13:00 — 육군본부(군수사) 방문: ABSOL K-CLP 제품소개 및 우수상용품 시범사용 수요 협의",
     agendas: [
