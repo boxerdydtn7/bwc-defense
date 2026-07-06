@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T22:02:08.240Z",
+  "updatedAt": "2026-07-06T22:14:11.585Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,62 +20,40 @@
     "WD-40",
     "WD40"
   ],
-  "count": 5,
+  "count": 3,
   "items": [
     {
-      "id": "R26BK01603960-000",
-      "title": "2026년 1권역(속초유 외 11교) 학교 냉난방기 분해세척 및 필터세척 용역",
-      "agency": "강원특별자치도교육청 강원특별자치도속초양양교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도속초양양교육지원청",
-      "posted": "2026-06-26 10:54:01",
-      "deadline": "2026-07-02 10:00:00",
+      "id": "R26BK01604522-000",
+      "title": "2026년 콘도객실 에어컨(냉난방기) 종합세척 용역",
+      "agency": "(주)강원랜드",
+      "demand": "(주)강원랜드",
+      "posted": "2026-06-29 12:50:34",
+      "deadline": "2026-06-29 14:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01603960&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01604522&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01604004-000",
-      "title": "2026년 2권역(산호유 외 9교) 학교 냉난방기 분해세척 및 필터세척 용역",
-      "agency": "강원특별자치도교육청 강원특별자치도속초양양교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도속초양양교육지원청",
-      "posted": "2026-06-26 10:59:43",
-      "deadline": "2026-07-02 10:00:00",
+      "id": "R26BK01606583-000",
+      "title": "[1권역] 봄봄유 외 16교 냉난방기 필터세척 용역",
+      "agency": "강원특별자치도교육청 강원특별자치도춘천교육지원청",
+      "demand": "강원특별자치도교육청 강원특별자치도춘천교육지원청",
+      "posted": "2026-06-29 13:40:23",
+      "deadline": "2026-07-03 10:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01604004&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606583&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01604024-000",
-      "title": "2026년 3권역(양양초 외 19교) 학교 냉난방기 분해세척 및 필터세척 용역",
-      "agency": "강원특별자치도교육청 강원특별자치도속초양양교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도속초양양교육지원청",
-      "posted": "2026-06-26 11:05:45",
-      "deadline": "2026-07-02 10:00:00",
-      "category": "용역",
+      "id": "R26BK01606212-000",
+      "title": "LCD 프린팅 빌드플레이트 세척 및 이송 모듈",
+      "agency": "한국생산기술연구원",
+      "demand": "한국생산기술연구원",
+      "posted": "2026-06-29 11:18:08",
+      "deadline": "2026-07-07 12:00:00",
+      "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01604024&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01603481-000",
-      "title": "2026년 소방청 개인정보보호 컨설팅 사업",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-06-26 11:28:22",
-      "deadline": "2026-07-07 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01603481&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01603387-000",
-      "title": "소방청 국제협력 활성화를 위한 2030 마스터플랜 연구",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-06-26 11:28:49",
-      "deadline": "2026-07-07 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01603387&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606212&bidPbancOrd=000"
     }
   ]
 }
