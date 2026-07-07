@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-const BASE = "/bwc-defense"; // next.config.ts 의 basePath 와 동일
-
 type Notice = {
   id: string;
   title: string;
@@ -45,7 +43,8 @@ export default function NoticeAlerts() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${BASE}/notices.json`, { cache: "no-store" })
+    // 상대경로 — GitHub(/bwc-defense/)·Cloudflare(/) 양쪽에서 현재 경로 기준으로 해석됨
+    fetch("notices.json", { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d: Feed) => setFeed(d))
       .catch(() => setErr(true))
