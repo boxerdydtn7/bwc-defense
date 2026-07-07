@@ -20,6 +20,7 @@ import {
 } from "@/data/defense";
 import NoticeAlerts from "./NoticeAlerts";
 import MeetingMinutes from "./MeetingMinutes";
+import Library from "./Library";
 
 const TAB_ORDER: Category[] = ["k_clp", "decontaminant", "defense_venture", "etc_projects"];
 const PIE_COLORS = ["#10B981", "#8B5CF6", "#3B82F6", "#F59E0B", "#EF4444", "#EC4899", "#06B6D4", "#6366F1", "#14B8A6"];
@@ -37,7 +38,7 @@ function ProgressBar({ value, color = "from-[#556B2F] to-[#8B9A6B]" }: { value: 
 }
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<Category | "overview" | "minutes">("overview");
+  const [activeTab, setActiveTab] = useState<Category | "overview" | "minutes" | "library">("overview");
 
   const upcoming = useMemo(() => getUpcomingMilestones(6), []);
   const overdue = useMemo(() => getOverdueMilestones(), []);
@@ -80,6 +81,12 @@ export default function Home() {
         >
           📋 회의록
         </button>
+        <button
+          onClick={() => setActiveTab("library")}
+          className={`px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${activeTab === "library" ? "bg-[#556B2F] text-white shadow-sm" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}`}
+        >
+          📁 자료실
+        </button>
         {TAB_ORDER.map((cat) => (
           <button
             key={cat}
@@ -95,6 +102,8 @@ export default function Home() {
         <OverviewSection upcoming={upcoming} overdue={overdue} totalProjects={totalProjects} inProgressCount={inProgressCount} doneMilestones={doneMilestones} categoryProgress={categoryProgress} defenseFieldPie={defenseFieldPie} />
       ) : activeTab === "minutes" ? (
         <MeetingMinutes />
+      ) : activeTab === "library" ? (
+        <Library />
       ) : (
         <CategorySection category={activeTab} />
       )}
