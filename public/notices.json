@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T22:11:11.612Z",
+  "updatedAt": "2026-07-08T22:05:33.189Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,7 +20,7 @@
     "WD-40",
     "WD40"
   ],
-  "count": 3,
+  "count": 4,
   "items": [
     {
       "id": "R26BK01604522-000",
@@ -43,6 +43,17 @@
       "category": "용역",
       "isDefense": false,
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606583&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01606621-000",
+      "title": "[2권역] 만천유 외 18교 냉난방기 필터세척 용역",
+      "agency": "강원특별자치도교육청 강원특별자치도춘천교육지원청",
+      "demand": "강원특별자치도교육청 강원특별자치도춘천교육지원청",
+      "posted": "2026-06-29 14:30:27",
+      "deadline": "2026-07-03 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606621&bidPbancOrd=000"
     },
     {
       "id": "R26BK01606212-000",
