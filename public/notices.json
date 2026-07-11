@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T22:02:23.443Z",
+  "updatedAt": "2026-07-11T21:49:26.429Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,40 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 3,
+  "items": [
+    {
+      "id": "R26BK01613221-000",
+      "title": "로봇 기반 세척 공정의 오염물 측정을 위한 비전 시스템",
+      "agency": "한국생산기술연구원",
+      "demand": "한국생산기술연구원",
+      "posted": "2026-07-02 11:41:35",
+      "deadline": "2026-07-03 13:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01613221&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01610387-001",
+      "title": "관세척 처리수 여과장치",
+      "agency": "경기도 김포시 맑은물사업본부",
+      "demand": "경기도 김포시 맑은물사업본부",
+      "posted": "2026-07-02 15:11:07",
+      "deadline": "2026-07-03 14:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01610387&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01613699-000",
+      "title": "워셔 세척기 1대 구입",
+      "agency": "전남대학교병원",
+      "demand": "전남대학교병원",
+      "posted": "2026-07-02 14:44:16",
+      "deadline": "2026-07-10 10:05:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01613699&bidPbancOrd=000"
+    }
+  ]
 }
