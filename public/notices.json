@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T21:50:49.349Z",
+  "updatedAt": "2026-07-13T21:56:32.599Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,73 +20,29 @@
     "WD-40",
     "WD40"
   ],
-  "count": 6,
+  "count": 2,
   "items": [
     {
-      "id": "R26BK01615399-000",
-      "title": "미화장비(자동마루세척기) 구매 및 지급",
-      "agency": "(재)우체국시설관리단",
-      "demand": "(재)우체국시설관리단",
-      "posted": "2026-07-03 11:39:49",
-      "deadline": "2026-07-03 16:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01615399&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01614255-000",
-      "title": "2026년 해군 내연기관용 윤활유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-07-03 09:49:56",
-      "deadline": "2026-07-09 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01614255&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01614421-000",
-      "title": "2026년 해군 MTU엔진용 윤활유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-07-03 09:50:29",
-      "deadline": "2026-07-09 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01614421&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01614462-000",
-      "title": "2026년 해군 증기터빈용 윤활유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-07-03 09:51:12",
-      "deadline": "2026-07-09 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01614462&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01614930-000",
-      "title": "다회용 기구·용기 세척업체 인증제 도입을 위한 인증평가 기준 마련 등 기반 연구",
-      "agency": "식품의약품안전처",
-      "demand": "식품의약품안전처",
-      "posted": "2026-07-03 09:43:17",
-      "deadline": "2026-07-14 10:00:00",
+      "id": "R26BK01616976-000",
+      "title": "2026년 하반기 동해 공립학교 냉난방기 필터세척 용역 소액수의 견적제출 공고",
+      "agency": "강원특별자치도교육청 강원특별자치도동해교육지원청",
+      "demand": "강원특별자치도교육청 강원특별자치도동해교육지원청",
+      "posted": "2026-07-06 07:28:26",
+      "deadline": "2026-07-10 14:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01614930&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616976&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01614658-000",
-      "title": "소방청 채용ㆍ시험 운영 위탁 용역",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-07-03 09:55:31",
-      "deadline": "2026-07-14 10:00:00",
+      "id": "R26BK01616976-001",
+      "title": "2026년 하반기 동해 공립학교 냉난방기 필터세척 용역 소액수의 견적제출 공고",
+      "agency": "강원특별자치도교육청 강원특별자치도동해교육지원청",
+      "demand": "강원특별자치도교육청 강원특별자치도동해교육지원청",
+      "posted": "2026-07-06 07:36:56",
+      "deadline": "2026-07-10 14:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01614658&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616976&bidPbancOrd=001"
     }
   ]
 }
