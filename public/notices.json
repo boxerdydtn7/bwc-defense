@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T22:00:36.456Z",
+  "updatedAt": "2026-07-16T22:04:11.871Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,29 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 2,
+  "count": 1,
   "items": [
     {
-      "id": "R26BK01616976-000",
-      "title": "2026년 하반기 동해 공립학교 냉난방기 필터세척 용역 소액수의 견적제출 공고",
-      "agency": "강원특별자치도교육청 강원특별자치도동해교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도동해교육지원청",
-      "posted": "2026-07-06 07:28:26",
-      "deadline": "2026-07-10 14:00:00",
-      "category": "용역",
+      "id": "R26BK01619007-000",
+      "title": "그리스 단품 토크 시험기 발주 계획",
+      "agency": "주식회사 일진글로벌",
+      "demand": "주식회사 일진글로벌",
+      "posted": "2026-07-07 14:23:25",
+      "deadline": "2026-07-15 12:00:00",
+      "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616976&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01616976-001",
-      "title": "2026년 하반기 동해 공립학교 냉난방기 필터세척 용역 소액수의 견적제출 공고",
-      "agency": "강원특별자치도교육청 강원특별자치도동해교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도동해교육지원청",
-      "posted": "2026-07-06 07:36:56",
-      "deadline": "2026-07-10 14:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616976&bidPbancOrd=001"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619007&bidPbancOrd=000"
     }
   ]
 }
