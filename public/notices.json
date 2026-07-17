@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T22:04:11.871Z",
+  "updatedAt": "2026-07-17T21:54:14.133Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,29 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
+  "count": 2,
   "items": [
     {
-      "id": "R26BK01619007-000",
-      "title": "그리스 단품 토크 시험기 발주 계획",
-      "agency": "주식회사 일진글로벌",
-      "demand": "주식회사 일진글로벌",
-      "posted": "2026-07-07 14:23:25",
-      "deadline": "2026-07-15 12:00:00",
+      "id": "R26BK01622571-000",
+      "title": "(재공고)LCD 프린팅 빌드플레이트 세척 및 이송 모듈",
+      "agency": "한국생산기술연구원",
+      "demand": "한국생산기술연구원",
+      "posted": "2026-07-08 11:04:28",
+      "deadline": "2026-07-16 10:00:00",
       "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619007&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01622571&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01622968-000",
+      "title": "(경쟁조건 완화) 2026년도 혈액장비(플레이트세척기) 공동구매",
+      "agency": "대한적십자사 혈액관리본부",
+      "demand": "대한적십자사 혈액관리본부",
+      "posted": "2026-07-08 13:43:42",
+      "deadline": "2026-07-16 11:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01622968&bidPbancOrd=000"
     }
   ]
 }
