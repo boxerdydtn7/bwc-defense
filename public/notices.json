@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T21:54:14.133Z",
+  "updatedAt": "2026-07-18T21:51:30.705Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -23,26 +23,26 @@
   "count": 2,
   "items": [
     {
-      "id": "R26BK01622571-000",
-      "title": "(재공고)LCD 프린팅 빌드플레이트 세척 및 이송 모듈",
-      "agency": "한국생산기술연구원",
-      "demand": "한국생산기술연구원",
-      "posted": "2026-07-08 11:04:28",
-      "deadline": "2026-07-16 10:00:00",
-      "category": "물품",
+      "id": "R26BK01625507-000",
+      "title": "개신고가차도 등 4개소 시설물 세척 용역",
+      "agency": "충청북도 청주시 서원구",
+      "demand": "충청북도 청주시 서원구",
+      "posted": "2026-07-09 15:16:05",
+      "deadline": "2026-07-15 12:00:00",
+      "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01622571&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625507&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01622968-000",
-      "title": "(경쟁조건 완화) 2026년도 혈액장비(플레이트세척기) 공동구매",
-      "agency": "대한적십자사 혈액관리본부",
-      "demand": "대한적십자사 혈액관리본부",
-      "posted": "2026-07-08 13:43:42",
-      "deadline": "2026-07-16 11:00:00",
-      "category": "물품",
+      "id": "R26BK01624817-000",
+      "title": "소방청 국제협력 활성화를 위한 2030 마스터플랜 연구(재공고)",
+      "agency": "소방청",
+      "demand": "소방청",
+      "posted": "2026-07-09 14:23:42",
+      "deadline": "2026-07-21 10:00:00",
+      "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01622968&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01624817&bidPbancOrd=000"
     }
   ]
 }
