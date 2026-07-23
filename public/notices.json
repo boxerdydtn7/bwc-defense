@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T22:03:44.388Z",
+  "updatedAt": "2026-07-23T22:04:03.369Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,40 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
+  "count": 3,
   "items": [
     {
-      "id": "R26BK01629573-000",
-      "title": "방사성 폐윤활유 내 H-3 및 C-14 제거를 위한 고효율 증발 분리 장치",
-      "agency": "한국생산기술연구원",
-      "demand": "한국생산기술연구원",
-      "posted": "2026-07-13 13:49:52",
-      "deadline": "2026-07-20 10:00:00",
+      "id": "R26BK01631538-000",
+      "title": "[혁신제품]청주지사 가스터빈 윤활유 스팀터빈 제어유 정제기 구매",
+      "agency": "한국지역난방공사 청주지사",
+      "demand": "한국지역난방공사 청주지사",
+      "posted": "2026-07-14 10:20:47",
+      "deadline": "2026-07-14 14:00:00",
       "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01629573&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01631538&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01631549-000",
+      "title": "방화복 세척 및 건조 장비 철거, 재설치 용역",
+      "agency": "소방청 국립소방연구원",
+      "demand": "소방청 국립소방연구원",
+      "posted": "2026-07-14 10:26:28",
+      "deadline": "2026-07-14 14:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01631549&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01632149-000",
+      "title": "스트레이너 세척설비 조작반 제작구매 설치",
+      "agency": "서울특별시 서울아리수본부 광암아리수정수센터",
+      "demand": "서울특별시 서울아리수본부 광암아리수정수센터",
+      "posted": "2026-07-14 13:45:17",
+      "deadline": "2026-07-14 14:30:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01632149&bidPbancOrd=000"
     }
   ]
 }
