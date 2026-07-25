@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T22:04:35.042Z",
+  "updatedAt": "2026-07-25T21:56:03.576Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,29 +20,62 @@
     "WD-40",
     "WD40"
   ],
-  "count": 2,
+  "count": 5,
   "items": [
     {
-      "id": "R26BK01628448-000",
-      "title": "2026년 군 그리스(고성능, 자동차및포병용) 구매",
-      "agency": "조달청",
-      "demand": "육군군수사령부",
-      "posted": "2026-07-15 14:32:51",
-      "deadline": "2026-07-28 10:00:00",
+      "id": "R26BK01636552-000",
+      "title": "가열 세척 교반기",
+      "agency": "한국건설생활환경시험연구원",
+      "demand": "한국건설생활환경시험연구원",
+      "posted": "2026-07-16 13:35:03",
+      "deadline": "2026-07-24 10:00:00",
       "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01628448&bidPbancOrd=000"
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01636552&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01634648-000",
-      "title": "다회용 기구·용기 세척업체 인증제 도입을 위한 인증평가 기준 마련 등 기반 연구",
-      "agency": "식품의약품안전처",
-      "demand": "식품의약품안전처",
-      "posted": "2026-07-15 13:36:37",
+      "id": "R26BK01636340-000",
+      "title": "초음파 기구세척기 1대 구입",
+      "agency": "전남대학교병원",
+      "demand": "전남대학교병원",
+      "posted": "2026-07-16 09:45:40",
+      "deadline": "2026-07-24 10:05:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01636340&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01634715-000",
+      "title": "2026년 소방청 개인정보보호 컨설팅 사업",
+      "agency": "소방청",
+      "demand": "소방청",
+      "posted": "2026-07-16 10:02:08",
       "deadline": "2026-07-28 10:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01634648&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01634715&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01634443-000",
+      "title": "폐절삭유 재생 재사용 시스템",
+      "agency": "디엔케이모빌리티(주)",
+      "demand": "디엔케이모빌리티(주)",
+      "posted": "2026-07-16 13:51:51",
+      "deadline": "2026-07-28 16:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01634443&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01636099-000",
+      "title": "2026년 군 부식 방지제(방청유) 구매",
+      "agency": "조달청",
+      "demand": "육군군수사령부",
+      "posted": "2026-07-16 08:24:28",
+      "deadline": "2026-07-29 10:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01636099&bidPbancOrd=000"
     }
   ]
 }
