@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T22:01:26.039Z",
+  "updatedAt": "2026-07-30T22:05:35.280Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,29 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
+  "count": 2,
   "items": [
     {
-      "id": "R26BK01639219-000",
-      "title": "(경쟁조건 완화)(재공고) 2026년도 혈액장비(플레이트세척기) 공동구매",
-      "agency": "대한적십자사 혈액관리본부",
-      "demand": "대한적십자사 혈액관리본부",
-      "posted": "2026-07-20 11:14:08",
-      "deadline": "2026-07-27 11:00:00",
+      "id": "R26BK01593472-001",
+      "title": "2026년 지방청 전화교환기 통합 교체사업",
+      "agency": "조달청",
+      "demand": "병무청",
+      "posted": "2026-07-21 09:12:52",
+      "deadline": "2026-08-04 10:00:00",
       "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01639219&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01593472&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01641255-000",
+      "title": "2026년 지방청 전화교환기 통합 교체사업 계약",
+      "agency": "조달청",
+      "demand": "병무청",
+      "posted": "2026-07-21 09:18:28",
+      "deadline": "2026-08-04 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01641255&bidPbancOrd=000"
     }
   ]
 }
