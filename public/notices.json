@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T22:06:06.775Z",
+  "updatedAt": "2026-08-01T21:55:44.621Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,51 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 4,
-  "items": [
-    {
-      "id": "R26BK01643399-000",
-      "title": "관세척 처리수 여과장치 관급자재 구매 ",
-      "agency": "경기도 김포시 맑은물사업본부",
-      "demand": "경기도 김포시 맑은물사업본부",
-      "posted": "2026-07-22 11:23:33",
-      "deadline": "2026-07-24 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01643399&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01643069-000",
-      "title": "2026년 해군 MTU엔진용 윤활유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-07-22 08:29:15",
-      "deadline": "2026-07-31 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01643069&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01643381-000",
-      "title": "2026년 해군 내연기관용 윤활유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-07-22 08:29:41",
-      "deadline": "2026-07-31 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01643381&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01643500-000",
-      "title": "2026년 해군 증기터빈용 윤활유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-07-22 08:30:05",
-      "deadline": "2026-07-31 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01643500&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
