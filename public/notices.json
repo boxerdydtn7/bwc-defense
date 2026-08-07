@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T22:12:11.884Z",
+  "updatedAt": "2026-08-07T01:01:08.393Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,40 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 3,
+  "items": [
+    {
+      "id": "R26BK01654040-000",
+      "title": "전동차 대차세척기 운용시스템 개선 ",
+      "agency": "서울교통공사",
+      "demand": "서울교통공사",
+      "posted": "2026-07-28 13:43:19",
+      "deadline": "2026-07-28 16:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01654040&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01652718-000",
+      "title": "MTU 엔진 윤활유 구매",
+      "agency": "해양경찰청",
+      "demand": "해양경찰청",
+      "posted": "2026-07-28 09:35:54",
+      "deadline": "2026-08-05 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01652718&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01645547-000",
+      "title": "소각로, 폐열보일러 및 부대설비 세정용역",
+      "agency": "한종산업개발 주식회사",
+      "demand": "한종산업개발 주식회사",
+      "posted": "2026-07-28 09:26:01",
+      "deadline": "2026-08-05 14:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01645547&bidPbancOrd=000"
+    }
+  ]
 }
