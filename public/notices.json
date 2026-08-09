@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T21:29:14.143Z",
+  "updatedAt": "2026-08-09T21:31:38.217Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,62 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 5,
+  "items": [
+    {
+      "id": "R26BK01648711-000",
+      "title": "한국관세정보원 업무시스템 클라우드 서비스(IaaS) 연장",
+      "agency": "한국관세정보원",
+      "demand": "한국관세정보원",
+      "posted": "2026-07-31 09:23:21",
+      "deadline": "2026-07-31 15:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01648711&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01659957-000",
+      "title": "다회용 기구·용기 세척업체 인증제 도입을 위한 인증평가 기준 마련 등 기반 연구",
+      "agency": "식품의약품안전처",
+      "demand": "식품의약품안전처",
+      "posted": "2026-07-31 10:01:29",
+      "deadline": "2026-08-04 12:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01659957&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01660428-000",
+      "title": "2026년 해군 MTU엔진용 윤활유 구매",
+      "agency": "조달청",
+      "demand": "해군군수사령부",
+      "posted": "2026-07-31 14:54:40",
+      "deadline": "2026-08-06 10:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01660428&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01660452-000",
+      "title": "2026년 해군 증기터빈용 윤활유 구매",
+      "agency": "조달청",
+      "demand": "해군군수사령부",
+      "posted": "2026-07-31 14:55:11",
+      "deadline": "2026-08-06 10:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01660452&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01660479-000",
+      "title": "2026년 해군 내연기관용 윤활유 구매",
+      "agency": "조달청",
+      "demand": "해군군수사령부",
+      "posted": "2026-07-31 14:55:48",
+      "deadline": "2026-08-06 10:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01660479&bidPbancOrd=000"
+    }
+  ]
 }
