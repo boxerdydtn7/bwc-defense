@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T21:40:45.080Z",
+  "updatedAt": "2026-08-11T21:45:21.017Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,29 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 2,
+  "items": [
+    {
+      "id": "R26BK01662010-000",
+      "title": "2026 스마트생태공장 진공세척건조장치 구축",
+      "agency": "주식회사 뉴엠텍",
+      "demand": "주식회사 뉴엠텍",
+      "posted": "2026-08-03 10:42:52",
+      "deadline": "2026-08-11 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01662010&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01662383-000",
+      "title": "(의료기기) 중앙공급팀 자동세척 소독 및 건조기 2set 구매",
+      "agency": "충북대학교병원",
+      "demand": "충북대학교병원",
+      "posted": "2026-08-03 11:53:34",
+      "deadline": "2026-08-12 13:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01662383&bidPbancOrd=000"
+    }
+  ]
 }
