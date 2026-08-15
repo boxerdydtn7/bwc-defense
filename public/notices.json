@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T21:24:04.429Z",
+  "updatedAt": "2026-08-15T21:19:53.668Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,62 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 5,
+  "items": [
+    {
+      "id": "R26BK01669506-000",
+      "title": "2026년 해군 증기터빈용 윤활유 구매",
+      "agency": "조달청",
+      "demand": "해군군수사령부",
+      "posted": "2026-08-06 13:16:29",
+      "deadline": "2026-08-10 12:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01669506&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01662010-001",
+      "title": "2026 스마트생태공장 진공세척건조장치 구축",
+      "agency": "주식회사 뉴엠텍",
+      "demand": "주식회사 뉴엠텍",
+      "posted": "2026-08-06 10:02:02",
+      "deadline": "2026-08-14 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01662010&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01669908-000",
+      "title": "사용후 배터리 세척기계",
+      "agency": "한국건설생활환경시험연구원",
+      "demand": "한국건설생활환경시험연구원",
+      "posted": "2026-08-06 14:22:36",
+      "deadline": "2026-08-14 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01669908&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01669516-000",
+      "title": "2026년 해군 내연기관용 윤활유 구매",
+      "agency": "조달청",
+      "demand": "해군군수사령부",
+      "posted": "2026-08-06 13:16:54",
+      "deadline": "2026-08-14 12:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01669516&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01668586-000",
+      "title": "소방청 채용·시험 운영 위탁 용역",
+      "agency": "소방청",
+      "demand": "소방청",
+      "posted": "2026-08-06 14:22:14",
+      "deadline": "2026-08-19 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01668586&bidPbancOrd=000"
+    }
+  ]
 }
