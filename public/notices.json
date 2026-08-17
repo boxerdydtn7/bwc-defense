@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T21:19:03.624Z",
+  "updatedAt": "2026-08-17T21:25:21.430Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,40 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 3,
+  "count": 1,
   "items": [
     {
-      "id": "R26BK01671809-000",
-      "title": "2026년 군 부식 방지제(방청유) 구매",
-      "agency": "조달청",
-      "demand": "육군군수사령부",
-      "posted": "2026-08-07 14:08:50",
-      "deadline": "2026-08-13 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01671809&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01662010-003",
-      "title": "2026 스마트생태공장 진공세척건조장치 구축",
-      "agency": "주식회사 뉴엠텍",
-      "demand": "주식회사 뉴엠텍",
-      "posted": "2026-08-07 14:29:19",
-      "deadline": "2026-08-14 10:00:00",
+      "id": "R26BK01673677-000",
+      "title": "2026년도 스마트 생태공장 구축사업_절삭유정화장치",
+      "agency": "일진기계(주)",
+      "demand": "일진기계(주)",
+      "posted": "2026-08-10 11:23:59",
+      "deadline": "2026-08-21 10:00:00",
       "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01662010&bidPbancOrd=003"
-    },
-    {
-      "id": "R26BK01671571-000",
-      "title": "2027학년도 화성세정중 교복(동·하복) 학교주관구매 업체 선정 입찰 공고",
-      "agency": "경기도교육청 경기도화성오산교육지원청 화성세정중학교",
-      "demand": "경기도교육청 경기도화성오산교육지원청 화성세정중학교",
-      "posted": "2026-08-07 11:32:46",
-      "deadline": "2026-09-04 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01671571&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01673677&bidPbancOrd=000"
     }
   ]
 }
