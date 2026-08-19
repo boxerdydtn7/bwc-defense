@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T21:23:38.616Z",
+  "updatedAt": "2026-08-19T21:24:36.102Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
-  "items": [
-    {
-      "id": "R26BK01673677-000",
-      "title": "2026년도 스마트 생태공장 구축사업_절삭유정화장치",
-      "agency": "일진기계(주)",
-      "demand": "일진기계(주)",
-      "posted": "2026-08-10 11:23:59",
-      "deadline": "2026-08-21 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01673677&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
