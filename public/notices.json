@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T21:24:36.102Z",
+  "updatedAt": "2026-08-20T21:26:54.136Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,40 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 3,
+  "items": [
+    {
+      "id": "R26BK01662794-001",
+      "title": "2026년 농기계임대사업 북부지소 세차장 설치 신축공사 물품(자동세척기) 구입(입찰대행)",
+      "agency": "강원특별자치도 고성군",
+      "demand": "강원특별자치도 고성군",
+      "posted": "2026-08-11 09:17:30",
+      "deadline": "2026-08-11 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01662794&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01663051-001",
+      "title": "2026년 농기계임대사업 남부지소 세차장 설치 신축공사 물품(자동세척기) 구입(입찰대행)",
+      "agency": "강원특별자치도 고성군",
+      "demand": "강원특별자치도 고성군",
+      "posted": "2026-08-11 09:18:39",
+      "deadline": "2026-08-11 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01663051&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01675664-000",
+      "title": "대구지사 냉각탑 윤활유 구매",
+      "agency": "한국지역난방공사 대구지사",
+      "demand": "한국지역난방공사 대구지사",
+      "posted": "2026-08-11 09:32:37",
+      "deadline": "2026-08-13 12:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01675664&bidPbancOrd=000"
+    }
+  ]
 }
