@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T21:23:24.087Z",
+  "updatedAt": "2026-08-22T21:20:41.694Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,62 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 5,
-  "items": [
-    {
-      "id": "R26BK01670982-000",
-      "title": "해운대사업소 31블록 상수도관 세척용역",
-      "agency": "부산광역시",
-      "demand": "부산광역시 상수도사업본부 해운대사업소",
-      "posted": "2026-08-12 15:10:15",
-      "deadline": "2026-08-19 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01670982&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01678319-000",
-      "title": "마(산약) 세척 탈피 라인",
-      "agency": "북안동농협 산약가공공장",
-      "demand": "북안동농협 산약가공공장",
-      "posted": "2026-08-12 10:33:01",
-      "deadline": "2026-08-19 10:40:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01678319&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01675948-001",
-      "title": "2026년 농기계임대사업 북부지소 세차장 설치 신축공사 물품(자동세척기) 구입(입찰대행)",
-      "agency": "강원특별자치도 고성군",
-      "demand": "강원특별자치도 고성군",
-      "posted": "2026-08-12 13:51:25",
-      "deadline": "2026-08-20 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01675948&bidPbancOrd=001"
-    },
-    {
-      "id": "R26BK01676021-001",
-      "title": "2026년 농기계임대사업 남부지소 세차장 설치 신축공사 물품(자동세척기) 구입(입찰대행)",
-      "agency": "강원특별자치도 고성군",
-      "demand": "강원특별자치도 고성군",
-      "posted": "2026-08-12 13:52:38",
-      "deadline": "2026-08-20 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01676021&bidPbancOrd=001"
-    },
-    {
-      "id": "R26BK01674787-000",
-      "title": "2026년 해군 유압유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-08-12 08:46:26",
-      "deadline": "2026-08-25 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01674787&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
