@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T03:05:33.000Z",
+  "updatedAt": "2026-08-29T22:59:52.137Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -23,26 +23,26 @@
   "count": 2,
   "items": [
     {
-      "id": "R26BK01686251-000",
-      "title": "2026년 하반기 도로부속물 세척 용역",
-      "agency": "전남광주통합특별시 종합건설본부",
-      "demand": "전남광주통합특별시 종합건설본부",
-      "posted": "2026-08-19 08:55:24",
-      "deadline": "2026-08-25 10:00:00",
+      "id": "R26BK01689628-000",
+      "title": "제8회 소방청장배 전국소방체전 개·폐회식 행사용역",
+      "agency": "충청남도 소방본부",
+      "demand": "충청남도 소방본부",
+      "posted": "2026-08-20 09:48:10",
+      "deadline": "2026-08-20 16:50:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01686251&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01689628&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01687415-000",
-      "title": "[연구장비고도화] 케이지세척기 구매",
-      "agency": "(재)경기도경제과학진흥원",
-      "demand": "(재)경기도경제과학진흥원",
-      "posted": "2026-08-19 10:17:30",
-      "deadline": "2026-08-31 11:00:00",
+      "id": "R26BK01686646-000",
+      "title": "2026년 공군 윤활제 제조",
+      "agency": "조달청",
+      "demand": "공군군수사령부",
+      "posted": "2026-08-20 08:46:17",
+      "deadline": "2026-09-01 10:00:00",
       "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01687415&bidPbancOrd=000"
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01686646&bidPbancOrd=000"
     }
   ]
 }
