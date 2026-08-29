@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T05:07:36.775Z",
+  "updatedAt": "2026-08-29T03:05:33.000Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,29 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 2,
+  "items": [
+    {
+      "id": "R26BK01686251-000",
+      "title": "2026년 하반기 도로부속물 세척 용역",
+      "agency": "전남광주통합특별시 종합건설본부",
+      "demand": "전남광주통합특별시 종합건설본부",
+      "posted": "2026-08-19 08:55:24",
+      "deadline": "2026-08-25 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01686251&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01687415-000",
+      "title": "[연구장비고도화] 케이지세척기 구매",
+      "agency": "(재)경기도경제과학진흥원",
+      "demand": "(재)경기도경제과학진흥원",
+      "posted": "2026-08-19 10:17:30",
+      "deadline": "2026-08-31 11:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01687415&bidPbancOrd=000"
+    }
+  ]
 }
