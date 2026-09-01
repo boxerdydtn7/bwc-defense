@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T23:13:23.030Z",
+  "updatedAt": "2026-09-01T00:24:00.697Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,62 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 5,
-  "items": [
-    {
-      "id": "R26BK01691030-000",
-      "title": "제8회 소방청장배 전국소방체전 경기운영 및 폭염대비 물품 구매(수의시담)",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-08-21 09:00:50",
-      "deadline": "2026-08-21 11:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01691030&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01691030-001",
-      "title": "제8회 소방청장배 전국소방체전 경기운영 및 폭염대비 물품 구매(수의시담)",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-08-21 09:42:48",
-      "deadline": "2026-08-21 11:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01691030&bidPbancOrd=001"
-    },
-    {
-      "id": "R26BK01692071-000",
-      "title": "제8회 소방청장배 전국소방체전 경기운영 및 폭염대비 물품 구매(수의시담)",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-08-21 09:53:54",
-      "deadline": "2026-08-21 11:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01692071&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01692794-000",
-      "title": "신일글로벌 스마트생태공장 구축사업_열처리용 자동 세정기 및 안전용 자동 유압클램프",
-      "agency": "주식회사 신일글로벌",
-      "demand": "주식회사 신일글로벌",
-      "posted": "2026-08-21 14:04:17",
-      "deadline": "2026-09-01 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01692794&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01692829-000",
-      "title": "신일글로벌 스마트생태공장 구축사업_절삭유 자동 조절장치",
-      "agency": "주식회사 신일글로벌",
-      "demand": "주식회사 신일글로벌",
-      "posted": "2026-08-21 14:09:42",
-      "deadline": "2026-09-01 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01692829&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
