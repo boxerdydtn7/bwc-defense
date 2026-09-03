@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T23:00:53.008Z",
+  "updatedAt": "2026-09-03T23:04:43.788Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,62 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 5,
+  "items": [
+    {
+      "id": "R26BK01694996-001",
+      "title": "여과지 역세척용 송풍기 장비 용역",
+      "agency": "서울특별시 서울아리수본부 광암아리수정수센터",
+      "demand": "서울특별시 서울아리수본부 광암아리수정수센터",
+      "posted": "2026-08-25 14:28:15",
+      "deadline": "2026-08-25 16:30:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01694996&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01696232-000",
+      "title": "전동차용 세척용제 3종 제조구매",
+      "agency": "서울교통공사",
+      "demand": "서울교통공사",
+      "posted": "2026-08-25 08:44:13",
+      "deadline": "2026-08-31 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01696232&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01697621-000",
+      "title": "2026년 역사 세정필터 및 환기실 급기구 청소 용역",
+      "agency": "부산교통공사",
+      "demand": "부산교통공사",
+      "posted": "2026-08-25 15:47:39",
+      "deadline": "2026-08-31 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01697621&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01696885-000",
+      "title": "공기호흡기 면체세척기 구매",
+      "agency": "경기도",
+      "demand": "경기도 소방재난본부",
+      "posted": "2026-08-25 11:32:54",
+      "deadline": "2026-09-02 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01696885&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01696723-000",
+      "title": "시험장비(실험용세척기) 구매",
+      "agency": "식품의약품안전처 부산지방식품의약품안전청",
+      "demand": "식품의약품안전처 부산지방식품의약품안전청",
+      "posted": "2026-08-25 13:22:27",
+      "deadline": "2026-09-02 14:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01696723&bidPbancOrd=000"
+    }
+  ]
 }
