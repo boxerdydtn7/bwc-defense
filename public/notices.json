@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T22:47:52.068Z",
+  "updatedAt": "2026-09-05T22:39:29.483Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,51 +20,29 @@
     "WD-40",
     "WD40"
   ],
-  "count": 4,
+  "count": 2,
   "items": [
     {
-      "id": "R26BK01698048-000",
-      "title": "2026년 소방청 개인정보보호 컨설팅 사업(수의시담)",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-08-26 14:33:15",
-      "deadline": "2026-08-26 17:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01698048&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01699836-000",
-      "title": "2026년도 옥천하수처리장 반응조 분리막 세척 및 세정 용역(하반기)",
-      "agency": "충청북도 옥천군 상하수도사업소",
-      "demand": "충청북도 옥천군 상하수도사업소",
-      "posted": "2026-08-26 16:14:01",
-      "deadline": "2026-09-01 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01699836&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01679124-000",
-      "title": "2026년 스마트 생태공장 구축사업_원심분리 필터형 고속 절삭유 정제기",
-      "agency": "주식회사 신미정공",
-      "demand": "주식회사 신미정공",
-      "posted": "2026-08-26 14:21:58",
-      "deadline": "2026-09-01 12:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01679124&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01698034-000",
-      "title": "전남광주소방본부 전남권역부본부 면체세척기 구매",
-      "agency": "전남광주통합특별시 소방본부 전남권역부본부",
-      "demand": "전남광주통합특별시 소방본부 전남권역부본부",
-      "posted": "2026-08-26 14:09:43",
+      "id": "R26BK01699808-000",
+      "title": "국립교통재활병원 환자식 자동 식기세척기 1식 구매 및 설치",
+      "agency": "국립교통재활병원",
+      "demand": "국립교통재활병원",
+      "posted": "2026-08-27 08:28:23",
       "deadline": "2026-09-03 10:00:00",
       "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01698034&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01699808&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01700436-000",
+      "title": "서대신동 부산대신중학교 주변 상수도관 세척용역",
+      "agency": "부산광역시 상수도사업본부 서부사업소",
+      "demand": "부산광역시 상수도사업본부 서부사업소",
+      "posted": "2026-08-27 10:25:02",
+      "deadline": "2026-09-03 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01700436&bidPbancOrd=000"
     }
   ]
 }
