@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T23:12:52.135Z",
+  "updatedAt": "2026-09-09T22:57:38.146Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,62 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 5,
-  "items": [
-    {
-      "id": "R26BK01704372-000",
-      "title": "2026년 소방청 정책소식지 발행 용역(수의시담)",
-      "agency": "소방청",
-      "demand": "소방청",
-      "posted": "2026-08-31 08:37:13",
-      "deadline": "2026-08-31 11:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01704372&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01704435-000",
-      "title": "(수의시담)2026년 지방세정 담당직원 문화체험 대행 용역",
-      "agency": "경기도 안산시",
-      "demand": "경기도 안산시",
-      "posted": "2026-08-31 09:04:05",
-      "deadline": "2026-08-31 15:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01704435&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01704483-000",
-      "title": "진건 공공하수처리시설 사여과지 점검 및 여과사 세척 용역",
-      "agency": "(주)넥스트워터",
-      "demand": "(주)넥스트워터",
-      "posted": "2026-08-31 09:18:55",
-      "deadline": "2026-09-04 11:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01704483&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01704483-001",
-      "title": "진건 공공하수처리시설 사여과지 점검 및 여과사 세척 용역",
-      "agency": "(주)넥스트워터",
-      "demand": "(주)넥스트워터",
-      "posted": "2026-08-31 11:22:09",
-      "deadline": "2026-09-04 11:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01704483&bidPbancOrd=001"
-    },
-    {
-      "id": "R26BK01702681-000",
-      "title": "중앙공급실 자동세척건조기 1SET",
-      "agency": "전북대학교병원",
-      "demand": "전북대학교병원",
-      "posted": "2026-08-31 09:27:12",
-      "deadline": "2026-09-10 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01702681&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
