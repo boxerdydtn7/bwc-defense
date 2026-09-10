@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T22:57:38.146Z",
+  "updatedAt": "2026-09-10T22:57:13.895Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,73 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 6,
+  "items": [
+    {
+      "id": "R26BK01706266-000",
+      "title": "전동차 유지보수용 윤활유 등 5종 구매",
+      "agency": "서울교통공사",
+      "demand": "서울교통공사",
+      "posted": "2026-09-01 13:45:08",
+      "deadline": "2026-09-01 16:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01706266&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01707209-000",
+      "title": "서울특별시농업기술센터 장애인용 수직형 리프트 유압유니트 구매 설치",
+      "agency": "서울특별시 농업기술센터",
+      "demand": "서울특별시 농업기술센터",
+      "posted": "2026-09-01 10:33:04",
+      "deadline": "2026-09-01 18:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01707209&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01705722-000",
+      "title": "광명시 자원회수시설 폐열보일러 세정 및 연소가스 처리설비 청소용역",
+      "agency": "동부엔텍 주식회사",
+      "demand": "동부엔텍 주식회사",
+      "posted": "2026-09-01 10:30:40",
+      "deadline": "2026-09-09 14:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01705722&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01707458-000",
+      "title": "서울재활병원 의료 기구용 살균 세척기 구입 입찰 공고",
+      "agency": "서울재활병원",
+      "demand": "서울재활병원",
+      "posted": "2026-09-01 11:35:01",
+      "deadline": "2026-09-10 15:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01707458&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01707458-001",
+      "title": "서울재활병원 의료 기구용 살균 세척기 구입 입찰 공고",
+      "agency": "서울재활병원",
+      "demand": "서울재활병원",
+      "posted": "2026-09-01 13:45:05",
+      "deadline": "2026-09-10 15:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01707458&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01707458-002",
+      "title": "서울재활병원 의료 기구용 살균 세척기 구입 입찰 공고",
+      "agency": "서울재활병원",
+      "demand": "서울재활병원",
+      "posted": "2026-09-01 14:07:20",
+      "deadline": "2026-09-10 15:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01707458&bidPbancOrd=002"
+    }
+  ]
 }
