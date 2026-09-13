@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T22:51:21.809Z",
+  "updatedAt": "2026-09-13T22:54:43.978Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "id": "R26BK01713314-000",
+      "title": "우수조달물품(2025177, 가정용식기세척기) 제3자단가계약",
+      "agency": "조달청",
+      "demand": "각 수요기관",
+      "posted": "2026-09-04 10:40:43",
+      "deadline": "2026-09-07 16:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713314&bidPbancOrd=000"
+    }
+  ]
 }
