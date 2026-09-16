@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T23:25:34.556Z",
+  "updatedAt": "2026-09-16T23:33:28.715Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,51 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 4,
-  "items": [
-    {
-      "id": "R26BK01711490-000",
-      "title": "신일글로벌 스마트생태공장 구축사업_절삭유 자동 조절장치",
-      "agency": "주식회사 신일글로벌",
-      "demand": "주식회사 신일글로벌",
-      "posted": "2026-09-07 09:55:14",
-      "deadline": "2026-09-07 11:30:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01711490&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01715462-000",
-      "title": "운반형 에어로졸 제독제 분사장치",
-      "agency": "국방과학연구소",
-      "demand": "국방과학연구소",
-      "posted": "2026-09-07 09:46:55",
-      "deadline": "2026-09-14 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01715462&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01715967-000",
-      "title": "2026년 스마트생태공장 구축사업-초음파수계형세척기",
-      "agency": "(주)케이피티유",
-      "demand": "(주)케이피티유",
-      "posted": "2026-09-07 12:04:34",
-      "deadline": "2026-09-15 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01715967&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01710260-000",
-      "title": "[긴급] 2027학년도 화성세정중 교복(동·하복) 학교주관구매 업체 선정 입찰 공고",
-      "agency": "경기도교육청 경기도화성오산교육지원청 화성세정중학교",
-      "demand": "경기도교육청 경기도화성오산교육지원청 화성세정중학교",
-      "posted": "2026-09-07 10:35:26",
-      "deadline": "2026-09-18 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01710260&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
