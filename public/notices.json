@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T23:23:17.943Z",
+  "updatedAt": "2026-09-18T23:02:25.223Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
-  "items": [
-    {
-      "id": "R26BK01718887-000",
-      "title": "(재공고)화생방 제독작전모의 SW 구현",
-      "agency": "국방과학연구소",
-      "demand": "국방과학연구소",
-      "posted": "2026-09-08 14:40:45",
-      "deadline": "2026-09-17 15:00:00",
-      "category": "용역",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01718887&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
