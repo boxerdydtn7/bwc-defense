@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T23:02:25.223Z",
+  "updatedAt": "2026-09-19T22:41:41.343Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "id": "R26BK01721239-000",
+      "title": "해마루초등학교 학교급식 식기류 세척.대여 위탁용역 수의계약 견적 제출 공고",
+      "agency": "경상북도교육청 경상북도구미교육지원청 해마루초등학교",
+      "demand": "경상북도교육청 경상북도구미교육지원청 해마루초등학교",
+      "posted": "2026-09-10 14:25:40",
+      "deadline": "2026-09-16 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01721239&bidPbancOrd=000"
+    }
+  ]
 }
