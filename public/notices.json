@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T23:01:00.927Z",
+  "updatedAt": "2026-09-21T23:50:53.992Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,40 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 3,
-  "items": [
-    {
-      "id": "R26BK01721239-001",
-      "title": "[취소공고]해마루초등학교 학교급식 식기류 세척.대여 위탁용역 수의계약 견적 제출 공고",
-      "agency": "경상북도교육청 경상북도구미교육지원청 해마루초등학교",
-      "demand": "경상북도교육청 경상북도구미교육지원청 해마루초등학교",
-      "posted": "2026-09-11 11:41:54",
-      "deadline": "2026-09-16 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01721239&bidPbancOrd=001"
-    },
-    {
-      "id": "R26BK01725129-000",
-      "title": "2026년 해군 유압유 구매",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-09-11 13:56:32",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01725129&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01725270-000",
-      "title": "중앙공급실 자동세척건조기 1SET(재공고)",
-      "agency": "전북대학교병원",
-      "demand": "전북대학교병원",
-      "posted": "2026-09-11 13:24:27",
-      "deadline": "2026-09-22 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01725270&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
