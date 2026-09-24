@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T23:26:18.872Z",
+  "updatedAt": "2026-09-24T23:46:43.360Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,95 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 8,
-  "items": [
-    {
-      "id": "R26BK01727434-000",
-      "title": "왕산양수장 수배전반 절연세척작업 용역",
-      "agency": "한국농어촌공사 경기지역본부 연천.포천.가평지사",
-      "demand": "한국농어촌공사 경기지역본부 연천.포천.가평지사",
-      "posted": "2026-09-14 11:54:18",
-      "deadline": "2026-09-14 15:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727434&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01726034-000",
-      "title": "강동초 외 15교 냉난방기 필터 세척 용역 수의견적 제출 공고 안내",
-      "agency": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "posted": "2026-09-14 10:23:56",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01726034&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01726064-000",
-      "title": "경포대초 외 12교 냉난방기 필터 세척 용역 수의견적 제출 공고 안내",
-      "agency": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "posted": "2026-09-14 10:24:21",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01726064&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01726069-000",
-      "title": "경포유 외 9교 냉난방기 필터 세척 용역 수의견적 제출 공고 안내",
-      "agency": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "posted": "2026-09-14 10:24:52",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01726069&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01726084-000",
-      "title": "구정초 외 7교 냉난방기 필터 세척 용역 수의견적 제출 공고 안내",
-      "agency": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "posted": "2026-09-14 10:25:17",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01726084&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01726106-000",
-      "title": "늘해랑유 외 7교 냉난방기 필터 세척 용역 수의견적 제출 공고 안내",
-      "agency": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "posted": "2026-09-14 10:25:35",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01726106&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01726130-000",
-      "title": "동명초 외 6교 냉난방기 필터 세척 용역 수의견적 제출 공고 안내",
-      "agency": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "demand": "강원특별자치도교육청 강원특별자치도강릉교육지원청",
-      "posted": "2026-09-14 10:26:03",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01726130&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01727607-000",
-      "title": "2026년 중앙보훈병원 2관 등 천정디퓨저 세척용역",
-      "agency": "한국보훈복지의료공단 중앙보훈병원",
-      "demand": "한국보훈복지의료공단 중앙보훈병원",
-      "posted": "2026-09-14 15:01:57",
-      "deadline": "2026-09-18 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727607&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
