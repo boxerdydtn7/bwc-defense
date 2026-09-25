@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T23:46:43.360Z",
+  "updatedAt": "2026-09-25T23:51:34.766Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,62 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 5,
+  "items": [
+    {
+      "id": "R26BK01730078-000",
+      "title": "2026년 보조장비(면체세척기) 2차 구매",
+      "agency": "강원특별자치도",
+      "demand": "강원특별자치도",
+      "posted": "2026-09-16 07:11:22",
+      "deadline": "2026-09-22 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730078&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01728272-000",
+      "title": "2026년 거점소독세척시설 운영 용역(10~12월)",
+      "agency": "강원특별자치도 춘천시 농업기술센터",
+      "demand": "강원특별자치도 춘천시 농업기술센터",
+      "posted": "2026-09-16 11:17:31",
+      "deadline": "2026-09-22 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728272&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01732377-000",
+      "title": "2026년 광명시 하반기 배수지 저수조 세척 및 청소용역",
+      "agency": "경기도 광명시",
+      "demand": "경기도 광명시",
+      "posted": "2026-09-16 16:02:31",
+      "deadline": "2026-09-22 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732377&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01717207-000",
+      "title": "인천복합 1,2호기 가스터빈 윤활유 정유기 구매",
+      "agency": "한국중부발전(주)인천화력본부",
+      "demand": "한국중부발전(주)인천화력본부",
+      "posted": "2026-09-16 09:36:14",
+      "deadline": "2026-09-22 11:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01717207&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01730403-000",
+      "title": "신일글로벌 스마트생태공장 구축사업_열처리용 자동 세정기",
+      "agency": "주식회사 신일글로벌",
+      "demand": "주식회사 신일글로벌",
+      "posted": "2026-09-16 08:11:08",
+      "deadline": "2026-09-28 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730403&bidPbancOrd=000"
+    }
+  ]
 }
