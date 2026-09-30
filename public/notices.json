@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T00:50:09.696Z",
+  "updatedAt": "2026-09-30T00:05:08.395Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,7 +20,7 @@
     "WD-40",
     "WD40"
   ],
-  "count": 4,
+  "count": 2,
   "items": [
     {
       "id": "R26BK01739080-000",
@@ -32,28 +32,6 @@
       "category": "용역",
       "isDefense": false,
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01739080&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01737713-000",
-      "title": "2026년 스마트 생태공장 구축사업 이물저감 고주파 세척 진공장치",
-      "agency": "주식회사 하트만",
-      "demand": "주식회사 하트만",
-      "posted": "2026-09-19 15:06:36",
-      "deadline": "2026-09-29 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01737713&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01737723-000",
-      "title": "2026년 스마트 생태공장 구축사업 원료저감형 세정장치",
-      "agency": "주식회사 하트만",
-      "demand": "주식회사 하트만",
-      "posted": "2026-09-19 15:40:10",
-      "deadline": "2026-09-29 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01737723&bidPbancOrd=000"
     },
     {
       "id": "R26BK01738339-000",
