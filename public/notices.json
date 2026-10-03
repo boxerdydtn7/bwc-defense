@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T00:32:49.769Z",
+  "updatedAt": "2026-10-03T00:10:47.319Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,73 +20,29 @@
     "WD-40",
     "WD40"
   ],
-  "count": 6,
+  "count": 2,
   "items": [
     {
-      "id": "R26BK01740639-000",
-      "title": "2026년 계산배수장 외 1개소 수배전반 절연세척 용역",
-      "agency": "한국농어촌공사 전남지역본부 영암지사",
-      "demand": "한국농어촌공사 전남지역본부 영암지사",
-      "posted": "2026-09-22 09:48:53",
-      "deadline": "2026-09-22 14:00:00",
+      "id": "R26BK01742852-000",
+      "title": "응집지 전원반 및 제어반 세척용역",
+      "agency": "서울특별시 서울아리수본부 암사아리수정수센터",
+      "demand": "서울특별시 서울아리수본부 암사아리수정수센터",
+      "posted": "2026-09-23 09:11:42",
+      "deadline": "2026-09-23 12:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01740639&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01742852&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01741535-000",
-      "title": "상지양수장 외 1개소 수배전반 절연세척 용역",
-      "agency": "한국농어촌공사 경기지역본부 고양지사",
-      "demand": "한국농어촌공사 경기지역본부 고양지사",
-      "posted": "2026-09-22 14:31:44",
-      "deadline": "2026-09-22 15:30:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01741535&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01741279-000",
-      "title": "운반형 에어로졸 제독제 분사장치",
+      "id": "R26BK01743643-000",
+      "title": "도심지 제독 플랫폼",
       "agency": "국방과학연구소",
       "demand": "국방과학연구소",
-      "posted": "2026-09-22 13:26:34",
-      "deadline": "2026-09-29 10:00:00",
+      "posted": "2026-09-23 13:20:15",
+      "deadline": "2026-11-03 10:00:00",
       "category": "물품",
       "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01741279&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01730947-000",
-      "title": "신호동 신호초등학교 주변 상수도관 세척용역",
-      "agency": "부산광역시",
-      "demand": "부산광역시 상수도사업본부 강서사업소",
-      "posted": "2026-09-22 09:06:26",
-      "deadline": "2026-09-30 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730947&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01730952-000",
-      "title": "송정동 부산물류터미널 주변 공업용수관 세척용역",
-      "agency": "부산광역시",
-      "demand": "부산광역시 상수도사업본부 강서사업소",
-      "posted": "2026-09-22 09:09:11",
-      "deadline": "2026-09-30 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730952&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01741132-000",
-      "title": "제독표면 잔류오염 증기추출 챔버 제작",
-      "agency": "국방과학연구소",
-      "demand": "국방과학연구소",
-      "posted": "2026-09-22 11:42:52",
-      "deadline": "2026-11-06 10:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01741132&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01743643&bidPbancOrd=000"
     }
   ]
 }
