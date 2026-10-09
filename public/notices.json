@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T00:43:48.549Z",
+  "updatedAt": "2026-10-09T01:00:13.761Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
-  "items": [
-    {
-      "id": "R26BK01743827-000",
-      "title": "2026 음식물류 폐기물 전용수거용기 세척 용역(11월)",
-      "agency": "경기도 수원시",
-      "demand": "경기도 수원시",
-      "posted": "2026-09-28 10:04:20",
-      "deadline": "2026-10-02 10:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01743827&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
