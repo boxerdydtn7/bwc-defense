@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T01:00:13.761Z",
+  "updatedAt": "2026-10-10T00:30:01.201Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "id": "R26BK01750474-000",
+      "title": "[수의시담] 2026년 한방약초축제 다회용기 대여 및 세척운반 용역",
+      "agency": "경상남도 산청군",
+      "demand": "경상남도 산청군",
+      "posted": "2026-09-30 13:26:01",
+      "deadline": "2026-09-30 18:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01750474&bidPbancOrd=000"
+    }
+  ]
 }
