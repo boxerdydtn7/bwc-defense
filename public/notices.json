@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T00:30:01.201Z",
+  "updatedAt": "2026-10-11T00:06:12.823Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,51 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
+  "count": 4,
   "items": [
     {
-      "id": "R26BK01750474-000",
-      "title": "[수의시담] 2026년 한방약초축제 다회용기 대여 및 세척운반 용역",
-      "agency": "경상남도 산청군",
-      "demand": "경상남도 산청군",
-      "posted": "2026-09-30 13:26:01",
-      "deadline": "2026-09-30 18:00:00",
+      "id": "R26BK01752452-000",
+      "title": "상수도 기전시설물 무정전 세정작업 용역 ",
+      "agency": "서울특별시 서울아리수본부 남부수도사업소",
+      "demand": "서울특별시 서울아리수본부 남부수도사업소",
+      "posted": "2026-10-01 10:41:15",
+      "deadline": "2026-10-01 12:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01750474&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01752452&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01752604-000",
+      "title": "2026년 대화금속 초음파 세척기 물품 구매",
+      "agency": "대화금속주식회사",
+      "demand": "대화금속주식회사",
+      "posted": "2026-10-01 11:13:19",
+      "deadline": "2026-10-02 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01752604&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01752735-000",
+      "title": "정스팜(주)양주지점 절임무 세척탈피기 입찰 공고",
+      "agency": "농업회사법인 정스팜 주식회사 양주지점",
+      "demand": "농업회사법인 정스팜 주식회사 양주지점",
+      "posted": "2026-10-01 12:16:16",
+      "deadline": "2026-10-06 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01752735&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01752382-000",
+      "title": "2026년 국내복귀 투자유치기반 조성사업 Metal Mask 자동세척 설비",
+      "agency": "주식회사 브이씨텍",
+      "demand": "주식회사 브이씨텍",
+      "posted": "2026-10-01 10:15:26",
+      "deadline": "2026-10-12 11:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01752382&bidPbancOrd=000"
     }
   ]
 }
