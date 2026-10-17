@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T23:16:12.820Z",
+  "updatedAt": "2026-10-17T22:55:05.560Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,40 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 3,
-  "items": [
-    {
-      "id": "R26BK01760491-000",
-      "title": "시산양배수장 외 1개소 수배전반 절연세척 용역",
-      "agency": "한국농어촌공사 경남지역본부 김해.양산.부산지사",
-      "demand": "한국농어촌공사 경남지역본부 김해.양산.부산지사",
-      "posted": "2026-10-07 14:53:27",
-      "deadline": "2026-10-07 16:30:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01760491&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01760035-000",
-      "title": "궤도분야 그리스(전자제어식 도유기용) 1종 구매",
-      "agency": "서울교통공사",
-      "demand": "서울교통공사",
-      "posted": "2026-10-07 13:34:22",
-      "deadline": "2026-10-14 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01760035&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01758439-000",
-      "title": "2026년 하반기 도로시설물 세척용역",
-      "agency": "경기도 군포시",
-      "demand": "경기도 군포시",
-      "posted": "2026-10-07 14:26:50",
-      "deadline": "2026-10-14 14:00:00",
-      "category": "용역",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01758439&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
