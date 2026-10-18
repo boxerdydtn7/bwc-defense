@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T22:55:05.560Z",
+  "updatedAt": "2026-10-18T22:47:58.446Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "id": "R26BK01764507-000",
+      "title": "운반형 에어로졸 제독제 분사장치",
+      "agency": "국방과학연구소",
+      "demand": "국방과학연구소",
+      "posted": "2026-10-12 10:14:49",
+      "deadline": "2026-10-19 10:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01764507&bidPbancOrd=000"
+    }
+  ]
 }
