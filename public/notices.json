@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T23:54:53.044Z",
+  "updatedAt": "2026-10-22T23:53:31.216Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,51 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
+  "count": 4,
   "items": [
     {
-      "id": "R26BK01764507-000",
-      "title": "운반형 에어로졸 제독제 분사장치",
+      "id": "R26BK01766217-000",
+      "title": "상궁양수장 외 1개소 수배전반 절연세척 용역",
+      "agency": "한국농어촌공사 충남지역본부 당진지사",
+      "demand": "한국농어촌공사 충남지역본부 당진지사",
+      "posted": "2026-10-13 09:18:19",
+      "deadline": "2026-10-13 10:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01766217&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01767055-000",
+      "title": "화성 태양광발전소 하반기 모듈 각도 변경 및 세척 용역",
+      "agency": "한국농어촌공사 화안사업단",
+      "demand": "한국농어촌공사 화안사업단",
+      "posted": "2026-10-13 09:44:45",
+      "deadline": "2026-10-13 12:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01767055&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01761657-001",
+      "title": "열화상 카메라 및 면체세척기 구매",
+      "agency": "세종특별자치시 소방본부",
+      "demand": "세종특별자치시 소방본부",
+      "posted": "2026-10-13 14:20:22",
+      "deadline": "2026-10-19 18:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01761657&bidPbancOrd=001"
+    },
+    {
+      "id": "R26BK01767693-000",
+      "title": "(재공고)피막 제독제 제조 공정 설계",
       "agency": "국방과학연구소",
       "demand": "국방과학연구소",
-      "posted": "2026-10-12 10:14:49",
-      "deadline": "2026-10-19 10:00:00",
-      "category": "물품",
+      "posted": "2026-10-13 13:11:16",
+      "deadline": "2026-10-23 10:00:00",
+      "category": "용역",
       "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01764507&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01767693&bidPbancOrd=000"
     }
   ]
 }
