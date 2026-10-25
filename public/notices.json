@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T22:55:08.671Z",
+  "updatedAt": "2026-10-25T23:02:07.116Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,40 +20,51 @@
     "WD-40",
     "WD40"
   ],
-  "count": 3,
+  "count": 4,
   "items": [
     {
-      "id": "R26BK01772048-000",
-      "title": "국제치안산업대전 소방청 홍보관 제작·운영 용역(수의시담)",
-      "agency": "소방청",
+      "id": "R26BK01768783-000",
+      "title": "2026년 보조장비(면체세척기) 3차구매",
+      "agency": "강원특별자치도",
+      "demand": "강원특별자치도",
+      "posted": "2026-10-16 07:31:16",
+      "deadline": "2026-10-22 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01768783&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01774937-000",
+      "title": "기관과 공장동 세척실 크레인 제작 구매",
+      "agency": "해양경찰청 해양경찰정비창",
+      "demand": "해양경찰청 해양경찰정비창",
+      "posted": "2026-10-16 10:45:50",
+      "deadline": "2026-10-22 10:00:00",
+      "category": "물품",
+      "isDefense": true,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01774937&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01775710-000",
+      "title": "2027년~2028년 소방청 비상위성통신망 유지관리 사업",
+      "agency": "조달청 대전지방조달청",
       "demand": "소방청",
-      "posted": "2026-10-15 08:54:45",
-      "deadline": "2026-10-15 16:00:00",
+      "posted": "2026-10-16 14:57:45",
+      "deadline": "2026-11-06 10:00:00",
       "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01772048&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01775710&bidPbancOrd=000"
     },
     {
-      "id": "R26BK01772706-000",
-      "title": "2026년 토양검정실 초자세척기 구입",
-      "agency": "전남광주통합특별시 순천시",
-      "demand": "전남광주통합특별시 순천시",
-      "posted": "2026-10-15 11:31:46",
-      "deadline": "2026-10-23 12:00:00",
-      "category": "물품",
+      "id": "R26BK01772462-000",
+      "title": "2027년 관세정보시스템 유지관리 사업",
+      "agency": "조달청",
+      "demand": "한국관세정보원",
+      "posted": "2026-10-16 13:57:50",
+      "deadline": "2026-11-25 10:00:00",
+      "category": "용역",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01772706&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01772899-000",
-      "title": "열화상 카메라 및 면체세척기 구매",
-      "agency": "세종특별자치시 소방본부",
-      "demand": "세종특별자치시 소방본부",
-      "posted": "2026-10-15 13:16:22",
-      "deadline": "2026-10-26 18:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01772899&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01772462&bidPbancOrd=000"
     }
   ]
 }
