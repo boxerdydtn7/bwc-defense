@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T00:38:14.215Z",
+  "updatedAt": "2026-10-31T00:25:30.437Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,40 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 3,
-  "items": [
-    {
-      "id": "R26BK01780642-000",
-      "title": "충주의료원 의료장비(기구세척기) 구매 (긴급)",
-      "agency": "충청북도충주의료원",
-      "demand": "충청북도충주의료원",
-      "posted": "2026-10-20 13:32:21",
-      "deadline": "2026-10-26 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780642&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01780468-000",
-      "title": "2026년 스마트 생태공장 구축사업 이물저감 고주파 세척 진공장치",
-      "agency": "주식회사 하트만",
-      "demand": "주식회사 하트만",
-      "posted": "2026-10-20 11:20:30",
-      "deadline": "2026-10-27 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780468&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01780721-000",
-      "title": "시약초자류(시험관 세척솔 등 74품목) 입찰구매(공고 제2026-182호)",
-      "agency": "농촌진흥청 국립원예특작과학원",
-      "demand": "농촌진흥청 국립원예특작과학원",
-      "posted": "2026-10-20 13:16:49",
-      "deadline": "2026-10-28 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780721&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
