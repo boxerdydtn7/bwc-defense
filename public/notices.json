@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T23:57:55.805Z",
+  "updatedAt": "2026-11-02T00:18:01.688Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "id": "R26BK01787968-000",
+      "title": "[K26-G127-010] 고리2호기 터빈윤활유 정화용 오일정화기",
+      "agency": "조달청 부산지방조달청",
+      "demand": "한국수력원자력(주)고리원자력본부",
+      "posted": "2026-10-23 13:31:47",
+      "deadline": "2026-10-26 12:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787968&bidPbancOrd=000"
+    }
+  ]
 }
