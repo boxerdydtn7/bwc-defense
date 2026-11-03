@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T00:18:01.688Z",
+  "updatedAt": "2026-11-03T02:47:07.741Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,40 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
+  "count": 3,
   "items": [
     {
-      "id": "R26BK01787968-000",
-      "title": "[K26-G127-010] 고리2호기 터빈윤활유 정화용 오일정화기",
-      "agency": "조달청 부산지방조달청",
-      "demand": "한국수력원자력(주)고리원자력본부",
-      "posted": "2026-10-23 13:31:47",
+      "id": "R26BK01790408-000",
+      "title": "양수장(구음,원동) 배전반 절연세척작업 용역",
+      "agency": "한국농어촌공사 충북지역본부 옥천.영동지사",
+      "demand": "한국농어촌공사 충북지역본부 옥천.영동지사",
+      "posted": "2026-10-26 11:16:01",
       "deadline": "2026-10-26 12:00:00",
+      "category": "용역",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01790408&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01790661-000",
+      "title": "관급자재(자동제어반) 구매-1계열 여과지 필터게이트 자동세척장치 전기공사",
+      "agency": "강원특별자치도 원주시 상하수도사업소",
+      "demand": "강원특별자치도 원주시 상하수도사업소",
+      "posted": "2026-10-26 13:59:27",
+      "deadline": "2026-10-27 11:00:00",
       "category": "물품",
       "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787968&bidPbancOrd=000"
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01790661&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01789539-000",
+      "title": "정읍폐비닐재활용시설 이물질 선별기(세정기) 제작 및 설치",
+      "agency": "(주)성원리사이클",
+      "demand": "(주)성원리사이클",
+      "posted": "2026-10-24 09:07:05",
+      "deadline": "2026-10-30 14:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789539&bidPbancOrd=000"
     }
   ]
 }
