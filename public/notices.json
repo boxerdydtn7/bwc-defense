@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T02:47:07.741Z",
+  "updatedAt": "2026-11-04T01:04:54.902Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,7 +20,7 @@
     "WD-40",
     "WD40"
   ],
-  "count": 3,
+  "count": 2,
   "items": [
     {
       "id": "R26BK01790408-000",
@@ -43,17 +43,6 @@
       "category": "물품",
       "isDefense": false,
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01790661&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01789539-000",
-      "title": "정읍폐비닐재활용시설 이물질 선별기(세정기) 제작 및 설치",
-      "agency": "(주)성원리사이클",
-      "demand": "(주)성원리사이클",
-      "posted": "2026-10-24 09:07:05",
-      "deadline": "2026-10-30 14:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789539&bidPbancOrd=000"
     }
   ]
 }
