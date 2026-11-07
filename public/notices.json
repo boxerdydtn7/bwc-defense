@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T01:23:21.045Z",
+  "updatedAt": "2026-11-07T00:38:40.196Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,51 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 4,
-  "items": [
-    {
-      "id": "R26BK01788001-000",
-      "title": "울산미포국가산단(제3분구) 완충저류시설 설치사업 관급자재(세척설비) 구매",
-      "agency": "울산광역시",
-      "demand": "울산광역시",
-      "posted": "2026-10-27 10:20:28",
-      "deadline": "2026-10-28 12:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01788001&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01792584-000",
-      "title": "(조달위탁)2단계 3공구 오수중계펌프장 다단약액 세정식 탈취기 제조구매설치",
-      "agency": "조달청 부산지방조달청",
-      "demand": "한국수자원공사 물관리계획부문 부산에코델타시티사업단",
-      "posted": "2026-10-27 11:03:18",
-      "deadline": "2026-10-28 12:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01792584&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01793145-000",
-      "title": "2026년 해군 유압유 제조",
-      "agency": "조달청",
-      "demand": "해군군수사령부",
-      "posted": "2026-10-27 13:24:02",
-      "deadline": "2026-10-28 12:00:00",
-      "category": "물품",
-      "isDefense": true,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01793145&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01793468-000",
-      "title": "김 세척용 초음파 발생장치",
-      "agency": "한국식품연구원",
-      "demand": "한국식품연구원",
-      "posted": "2026-10-27 13:35:29",
-      "deadline": "2026-11-03 10:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01793468&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
