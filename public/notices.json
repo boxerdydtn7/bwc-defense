@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T00:38:40.196Z",
+  "updatedAt": "2026-11-08T00:14:14.190Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,6 +20,18 @@
     "WD-40",
     "WD40"
   ],
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "id": "R26BK01794038-001",
+      "title": "호동2매립장 침출수 고도처리시설 여과막 세정제 구입",
+      "agency": "경상북도 포항시",
+      "demand": "경상북도 포항시",
+      "posted": "2026-10-29 09:36:45",
+      "deadline": "2026-11-03 10:00:00",
+      "category": "물품",
+      "isDefense": false,
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01794038&bidPbancOrd=001"
+    }
+  ]
 }
