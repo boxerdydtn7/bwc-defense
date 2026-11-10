@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T00:34:44.292Z",
+  "updatedAt": "2026-11-10T03:12:40.430Z",
   "source": "나라장터(조달청) 입찰공고정보서비스",
   "keywords": [
     "윤활유",
@@ -20,18 +20,6 @@
     "WD-40",
     "WD40"
   ],
-  "count": 1,
-  "items": [
-    {
-      "id": "R26BK01801432-000",
-      "title": "국립교통재활병원 [의료소모품] 자동세척기용 세제 외 526건",
-      "agency": "국립교통재활병원",
-      "demand": "국립교통재활병원",
-      "posted": "2026-10-30 14:51:41",
-      "deadline": "2026-11-09 13:00:00",
-      "category": "물품",
-      "isDefense": false,
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01801432&bidPbancOrd=000"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
